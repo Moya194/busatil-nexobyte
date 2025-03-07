@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from themes.getappui.com/collab/unikit/default/auth-lock-screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:17:41 GMT -->
+<!-- Mirrored from themes.getappui.com/collab/unikit/default/auth-recover-pw.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:17:41 GMT -->
 <head>
     
 
@@ -35,28 +34,28 @@
                         <div class="card">
                             <div class="card-body p-0 auth-header-box">
                                 <div class="text-center p-3">
-                                    <a href="index.html" class="logo logo-admin">
+                                    <a href="index.php" class="logo logo-admin">
                                         <img src="assets/images/logo-sm.png" height="50" alt="logo" class="auth-logo">
                                     </a>
-                                    <h4 class="mt-3 mb-1 fw-semibold text-white font-18">Enter Password And Use Unikit</h4>   
-                                    <p class="text-muted  mb-0">Hello Mark, enter your password to unlock the screen !</p>  
+                                    <h4 class="mt-3 mb-1 fw-semibold text-white font-18">Reset Password For Unikit</h4>   
+                                    <p class="text-muted  mb-0">Enter your Email and instructions will be sent to you!</p>  
                                 </div>
                             </div>
                             <div class="card-body pt-0">
-                                <form class="my-4" action="https://themes.getappui.com/collab/unikit/default/index.html">
+                                <form class="my-4" action="https://themes.getappui.com/collab/unikit/default/index.php">
                                     <div class="form-group mb-3">
-                                        <label class="form-label" for="userpassword">Password</label>                                            
-                                        <input type="password" class="form-control" name="password" id="userpassword" placeholder="Enter password">                            
+                                        <label class="form-label" for="username">Email</label>
+                                        <input type="text" class="form-control" id="userEmail" name="Email" placeholder="Enter Email Address">                               
                                     </div><!--end form-group--> 
 
                                     <div class="form-group mb-0 row">
                                         <div class="col-12">
-                                            <button class="btn btn-primary w-100" type="button">Unlock <i class="fas fa-sign-in-alt ms-1"></i></button>
+                                            <button class="btn btn-primary w-100" type="button">Reset <i class="fas fa-sign-in-alt ms-1"></i></button>
                                         </div><!--end col--> 
                                     </div> <!--end form-group-->                           
                                 </form><!--end form-->
                                 <div class="text-center text-muted">
-                                    <p class="mb-1">Not you ? return  <a href="auth-register.html" class="text-primary ms-2">Sign in here</a></p>
+                                    <p class="mb-1">Remember It ?  <a href="auth-register.php" class="text-primary ms-2">Sign in here</a></p>
                                 </div>
                             </div><!--end card-body-->
                             <div class="card-body bg-light-alt text-center">
@@ -76,6 +75,6 @@
     
 </body>
 
-
-<!-- Mirrored from themes.getappui.com/collab/unikit/default/auth-lock-screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:17:41 GMT -->
+<!-- Mirrored from themes.getappui.com/collab/unikit/default/auth-recover-pw.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:17:41 GMT -->
 </html>
+

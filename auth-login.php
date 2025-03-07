@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from themes.getappui.com/collab/unikit/default/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:17:41 GMT -->
+<!-- Mirrored from themes.getappui.com/collab/unikit/default/auth-login.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:17:41 GMT -->
 <head>
     
 
@@ -33,10 +32,10 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-4 mx-auto">
-                            <div class="card">
+                            <div class="card rounded-4">
                                 <div class="card-body p-0 auth-header-box">
                                     <div class="text-center p-3">
-                                        <a href="index.html" class="logo logo-admin">
+                                        <a href="index.php" class="logo logo-admin">
                                             <img src="assets/images/valores.jpg" height="50" alt="logo" class="auth-logo">
                                             <i class="fas fa-arrow-right mx-3 text-white"></i> <!-- Flecha -->
                                             <img src="assets/images/logo-principal.png" height="50" alt="logo" class="auth-logo">
@@ -46,55 +45,48 @@
                                     </div>
                                 </div>
                                 <div class="card-body pt-0">                                    
-                                    <form class="my-4" action="https://themes.getappui.com/collab/unikit/default/index.html">            
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="cedula">Cedula</label>
-                                            <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Ingresa tu Cedula">                               
-                                        </div><!--end form-group--> 
-
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="nombre">Nombre</label>
-                                            <input type="email" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre">                               
-                                        </div><!--end form-group--> 
+                                    <form class="my-4" action="https://themes.getappui.com/collab/unikit/default/index.php">            
                                         <div class="form-group mb-2">
                                             <label class="form-label" for="username">Usuario</label>
-                                            <input type="text" class="form-control" id="username" name="username" placeholder="Ingresa tu nombre de Usuario">                               
+                                            <input type="text" class="form-control" id="username" name="username" placeholder="Ingrese Usuario">                               
                                         </div><!--end form-group--> 
-                                        <div class="form-group mb-2">
+            
+                                        <div class="form-group">
                                             <label class="form-label" for="userpassword">Contraseña</label>                                            
-                                            <input type="password" class="form-control" name="password" id="userpassword" placeholder="Ingresa tu Contraseña">                            
+                                            <input type="password" class="form-control" name="password" id="userpassword" placeholder="Ingrese su Contraseña">                            
                                         </div><!--end form-group--> 
-
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="Confirmpassword">Confirma tu contraseña</label>                                            
-                                            <input type="password" class="form-control" name="password" id="Confirmpassword" placeholder="Confirma tu contraseña">                            
-                                        </div><!--end form-group--> 
-
-                                        
             
                                         <div class="form-group row mt-3">
-                                            <div class="col-12">
+                                            <div class="col-sm-6">
                                                 <div class="form-check form-switch form-switch-success">
                                                     <input class="form-check-input" type="checkbox" id="customSwitchSuccess">
-                                                    <label class="form-check-label" for="customSwitchSuccess">Estas deacuerdo con los <a href="#" class="text-primary">Terminos y condiciones</a></label>
+                                                    <label class="form-check-label" for="customSwitchSuccess">Recordar</label>
                                                 </div>
+                                            </div><!--end col--> 
+                                            <div class="col-sm-6 text-end">
+                                                <a href="auth-recover-pw.php" class="text-muted font-13"><i class="dripicons-lock"></i> Olvidaste tu contraseña?</a>                                    
                                             </div><!--end col--> 
                                         </div><!--end form-group--> 
             
                                         <div class="form-group mb-0 row">
                                             <div class="col-12">
                                                 <div class="d-grid mt-3">
-                                                    <button class="btn btn-custom" type="button">Registrar <i class="fas fa-sign-in-alt ms-1"></i></button>
+                                                    <button class="btn btn-custom" type="button">Ingresar <i class="fas fa-sign-in-alt ms-1"></i></button>
                                                 </div>
+                                                
                                             </div><!--end col--> 
                                         </div> <!--end form-group-->                           
                                     </form><!--end form-->
                                     <div class="m-3 text-center text-muted">
-                                        <p class="mb-0">Ya tienes cuenta? <a href="auth-login.html" class="text-primary ms-2">Ingresa</a></p>
+                                        <p class="mb-0">No tienes una cuenta ?  <a href="auth-register.php" class="text-primary ms-2">Registrate gratis</a></p>
+                                    </div>
+                                    <hr class="hr-dashed mt-4">
+                                    
+                                    
                                     </div>
                                 </div><!--end card-body-->
                             </div><!--end card-->
-                        </div><!--end col-->
+                        </div><!--end col-->    
                     </div><!--end row-->
                 </div><!--end card-body-->
             </div><!--end col-->
@@ -106,6 +98,6 @@
     
 </body>
 
-
-<!-- Mirrored from themes.getappui.com/collab/unikit/default/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:17:41 GMT -->
+<!-- Mirrored from themes.getappui.com/collab/unikit/default/auth-login.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:17:41 GMT -->
 </html>
+

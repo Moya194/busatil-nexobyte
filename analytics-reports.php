@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from themes.getappui.com/collab/unikit/default/analytics-reports.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:16:45 GMT -->
+<!-- Mirrored from themes.getappui.com/collab/unikit/default/analytics-reports.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:16:45 GMT -->
 
 <head>
-
 
     <meta charset="utf-8" />
     <title>Unikit - Admin & Dashboard Template</title>
@@ -15,7 +14,6 @@
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-
 
 
     <!-- App css -->
@@ -30,7 +28,7 @@
     <div class="left-sidebar">
         <!-- LOGO -->
         <div class="brand">
-            <a href="index.html" class="logo">
+            <a href="index.php" class="logo">
                 <span>
                     <img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
                 </span>
@@ -81,13 +79,13 @@
                         <div class="collapse " id="sidebarAnalytics">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Dashboard</a>
+                                    <a class="nav-link" href="index.php">Dashboard</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
-                                    <a href="analytics-customers.html" class="nav-link ">Customers</a>
+                                    <a href="analytics-customers.php" class="nav-link ">Customers</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
-                                    <a href="analytics-reports.html" class="nav-link ">Reports</a>
+                                    <a href="analytics-reports.php" class="nav-link ">Reports</a>
                                 </li><!--end nav-item-->
                             </ul><!--end nav-->
                         </div><!--end sidebarAnalytics-->
@@ -101,22 +99,22 @@
                         <div class="collapse " id="sidebarAuthentication">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="auth-login.html">Log in</a>
+                                    <a class="nav-link" href="auth-login.php">Log in</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="auth-register.html">Register</a>
+                                    <a class="nav-link" href="auth-register.php">Register</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="auth-recover-pw.html">Re-Password</a>
+                                    <a class="nav-link" href="auth-recover-pw.php">Re-Password</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="auth-lock-screen.html">Lock Screen</a>
+                                    <a class="nav-link" href="auth-lock-screen.php">Lock Screen</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="auth-404.html">Error 404</a>
+                                    <a class="nav-link" href="auth-404.php">Error 404</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="auth-500.html">Error 500</a>
+                                    <a class="nav-link" href="auth-500.php">Error 500</a>
                                 </li><!--end nav-item-->
                             </ul><!--end nav-->
                         </div><!--end sidebarAuthentication-->
@@ -347,12 +345,12 @@
                         </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="pages-profile.html"><i
+                        <a class="dropdown-item" href="pages-profile.php"><i
                                 class="ti ti-user font-16 me-1 align-text-bottom"></i> Profile</a>
-                        <a class="dropdown-item" href="crypto-settings.html"><i
+                        <a class="dropdown-item" href="crypto-settings.php"><i
                                 class="ti ti-settings font-16 me-1 align-text-bottom"></i> Settings</a>
                         <div class="dropdown-divider mb-0"></div>
-                        <a class="dropdown-item" href="auth-login.html"><i
+                        <a class="dropdown-item" href="auth-login.php"><i
                                 class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
                     </div>
                 </li><!--end topbar-profile-->
@@ -442,7 +440,6 @@
                     </div> <!--end col-->
                 </div><!--end row-->
 
-
                 <!-- Barra Con Movimiento-->
                 <div class="row">
                     <div class="col-12">
@@ -526,7 +523,6 @@
                         </div><!--end card-->
                     </div><!--end col-->
                 </div><!--end row-->
-
 
                 <div class="row">
                     <div class="col-12">
@@ -751,6 +747,7 @@
 </body>
 <!--end body-->
 
-<!-- Mirrored from themes.getappui.com/collab/unikit/default/analytics-reports.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:16:46 GMT -->
+<!-- Mirrored from themes.getappui.com/collab/unikit/default/analytics-reports.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Mar 2025 06:16:46 GMT -->
 
 </html>
+
