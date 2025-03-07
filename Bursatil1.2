@@ -1,8 +1,18 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     7/3/2025 1:09:45                             */
+/* Created on:     7/3/2025 4:05:49                             */
 /*==============================================================*/
 
+
+/*==============================================================*/
+/* Table: CATEGORIAS                                            */
+/*==============================================================*/
+create table CATEGORIAS
+(
+   CATID                int not null auto_increment,
+   CATNOMBRE            char(50),
+   primary key (CATID)
+);
 
 /*==============================================================*/
 /* Table: EMPRESAS                                              */
@@ -11,6 +21,7 @@ create table EMPRESAS
 (
    EMPID                int not null auto_increment,
    SALID                int,
+   CATID                int,
    EMPNOMBRE            char(50),
    EMPVALORUNITARIO     decimal(10,4),
    EMPCANTIDADACCIONES  int,
@@ -79,6 +90,9 @@ create table USER
    USECEDULA            char(10),
    primary key (USEID)
 );
+
+alter table EMPRESAS add constraint FK_PERTENECE foreign key (CATID)
+      references CATEGORIAS (CATID) on delete restrict on update restrict;
 
 alter table EMPRESAS add constraint FK_REGISTRA foreign key (SALID)
       references SALAS (SALID) on delete restrict on update restrict;
