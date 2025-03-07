@@ -1,0 +1,110 @@
+Acceso al script: 2025-03-07 15:45:26
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Acceso al script: 2025-03-07 15:47:00
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Acceso al script: 2025-03-07 15:47:17
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Acceso al script: 2025-03-07 15:47:36
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Acceso al script: 2025-03-07 15:48:30
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Acceso al script: 2025-03-07 15:48:31
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Acceso al script: 2025-03-07 15:49:10
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Acceso al script: 2025-03-07 15:50:03
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Usuario: jean@gmail.com
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrilllo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$kMLoWvTk/ULpfDPoCcaZle0pnPUFiHUpUOnR9Xh2n4iBTd5HBu5hm
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-07 15:50:50
+POST: Array
+(
+    [username] => ja
+    [password] => 111
+)
+
+Usuario: ja
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-07 15:51:01
+POST: Array
+(
+    [username] => jiji@gmail.com
+    [password] => 111
+)
+
+Usuario: jiji@gmail.com
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => ja
+    [USEAPELLIDO] => jo
+    [USEEMAIL] => jiji@gmail.com
+    [USEPASSWORD] => $2y$10$xoDgID9MiboXs83wajUOSuXkAIb8bZIJYGt4YbNqIiA5cLVv41rJa
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1003174842
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin

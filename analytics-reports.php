@@ -1,3 +1,12 @@
+<?php
+// Incluimos el validador de sesiones
+require_once 'controlador/session-validator.php';
+
+// Verificamos que sea un administrador
+requiere_admin();
+
+// El resto del código de la página de administrador
+?>
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,3 +1,13 @@
+<?php
+// Incluimos el validador de sesiones
+require_once 'controlador/session-validator.php';
+
+// Verificamos que sea un usuario
+requiere_usuario();
+
+// El resto del código de la página de usuarios
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     
