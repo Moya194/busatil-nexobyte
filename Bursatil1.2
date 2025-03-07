@@ -1,16 +1,39 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     7/3/2025 1:09:45                             */
+/* Created on:     7/3/2025 4:05:49                             */
 /*==============================================================*/
 
+
+drop table if exists CATEGORIAS;
+
+drop table if exists EMPRESAS;
+
+drop table if exists NOTICIAS;
+
+drop table if exists RANKING;
+
+drop table if exists SALAS;
+
+drop table if exists USER;
+
+/*==============================================================*/
+/* Table: CATEGORIAS                                            */
+/*==============================================================*/
+create table CATEGORIAS
+(
+   CATID                int not null,
+   CATNOMBRE            char(50),
+   primary key (CATID)
+);
 
 /*==============================================================*/
 /* Table: EMPRESAS                                              */
 /*==============================================================*/
 create table EMPRESAS
 (
-   EMPID                int not null auto_increment,
+   EMPID                int not null,
    SALID                int,
+   CATID                int,
    EMPNOMBRE            char(50),
    EMPVALORUNITARIO     decimal(10,4),
    EMPCANTIDADACCIONES  int,
@@ -23,7 +46,7 @@ create table EMPRESAS
 /*==============================================================*/
 create table NOTICIAS
 (
-   NOTID                int not null auto_increment,
+   NOTID                int not null,
    SALID                int,
    NOTDESCRIPCION       longtext,
    NOTSENTIMIENTO       int,
@@ -35,7 +58,7 @@ create table NOTICIAS
 /*==============================================================*/
 create table RANKING
 (
-   RANID                int not null auto_increment,
+   RANID                int not null,
    SALID                int,
    RANIDUSERUNO         int not null,
    RANIDUSERDOS         int,
@@ -55,7 +78,7 @@ create table RANKING
 /*==============================================================*/
 create table SALAS
 (
-   SALID                int not null auto_increment,
+   SALID                int not null,
    SALNOMBRE            char(50),
    SALDESCRIPCION       longtext,
    SALNUMEROTURNOS      int,
@@ -68,7 +91,7 @@ create table SALAS
 /*==============================================================*/
 create table USER
 (
-   USEID                int not null auto_increment,
+   USEID                int not null,
    RANID                int,
    USENOMBRE            char(50),
    USEAPELLIDO          char(50),
@@ -79,6 +102,9 @@ create table USER
    USECEDULA            char(10),
    primary key (USEID)
 );
+
+alter table EMPRESAS add constraint FK_PERTENECE foreign key (CATID)
+      references CATEGORIAS (CATID) on delete restrict on update restrict;
 
 alter table EMPRESAS add constraint FK_REGISTRA foreign key (SALID)
       references SALAS (SALID) on delete restrict on update restrict;
@@ -91,3 +117,4 @@ alter table RANKING add constraint FK_INGRESAN foreign key (SALID)
 
 alter table USER add constraint FK_AGRUPAN foreign key (RANID)
       references RANKING (RANID) on delete restrict on update restrict;
+
