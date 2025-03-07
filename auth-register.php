@@ -45,49 +45,72 @@
                                     </div>
                                 </div>
                                 <div class="card-body pt-0">                                    
-                                    <form class="my-4" action="https://themes.getappui.com/collab/unikit/default/index.php">            
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="cedula">Cedula</label>
-                                            <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Ingresa tu Cedula">                               
-                                        </div><!--end form-group--> 
+                                <form class="my-4" action="controlador/createUser.php" method="POST"> <!-- Aquí debes apuntar al backend que recibirá el POST -->
+                                    <!-- Cédula -->
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="cedula">Cédula</label>
+                                        <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Ingresa tu Cédula" required>                               
+                                    </div><!--end form-group--> 
 
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="nombre">Nombre</label>
-                                            <input type="email" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre">                               
-                                        </div><!--end form-group--> 
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="username">Usuario</label>
-                                            <input type="text" class="form-control" id="username" name="username" placeholder="Ingresa tu nombre de Usuario">                               
-                                        </div><!--end form-group--> 
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="userpassword">Contraseña</label>                                            
-                                            <input type="password" class="form-control" name="password" id="userpassword" placeholder="Ingresa tu Contraseña">                            
-                                        </div><!--end form-group--> 
+                                    <!-- Nombre -->
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>                               
+                                    </div><!--end form-group--> 
 
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="Confirmpassword">Confirma tu contraseña</label>                                            
-                                            <input type="password" class="form-control" name="password" id="Confirmpassword" placeholder="Confirma tu contraseña">                            
-                                        </div><!--end form-group--> 
+                                    <!-- Apellido -->
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="apellido">Apellido</label>
+                                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>                               
+                                    </div><!--end form-group--> 
 
-                                        
-            
-                                        <div class="form-group row mt-3">
-                                            <div class="col-12">
-                                                <div class="form-check form-switch form-switch-success">
-                                                    <input class="form-check-input" type="checkbox" id="customSwitchSuccess">
-                                                    <label class="form-check-label" for="customSwitchSuccess">Estas deacuerdo con los <a href="#" class="text-primary">Terminos y condiciones</a></label>
-                                                </div>
-                                            </div><!--end col--> 
-                                        </div><!--end form-group--> 
-            
-                                        <div class="form-group mb-0 row">
-                                            <div class="col-12">
-                                                <div class="d-grid mt-3">
-                                                    <button class="btn btn-custom" type="button">Registrar <i class="fas fa-sign-in-alt ms-1"></i></button>
-                                                </div>
-                                            </div><!--end col--> 
-                                        </div> <!--end form-group-->                           
-                                    </form><!--end form-->
+                                    <!-- Email -->
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>                               
+                                    </div><!--end form-group--> 
+
+                                    <!-- Contraseña -->
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="userpassword">Contraseña</label>                                            
+                                        <input type="password" class="form-control" name="password" id="userpassword" placeholder="Ingresa tu Contraseña" required>                            
+                                    </div><!--end form-group--> 
+
+                                    <!-- Confirmar Contraseña -->
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="Confirmpassword">Confirma tu contraseña</label>                                            
+                                        <input type="password" class="form-control" name="confirmpassword" id="Confirmpassword" placeholder="Confirma tu contraseña" required>                            
+                                    </div><!--end form-group--> 
+
+                                    <!-- Rol (puede ser un select si tienes roles) -->
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="rol">Rol</label>
+                                        <select class="form-control" id="rol" name="rol" required>
+                                            <option value="usuario">Usuario</option>
+                                            <option value="admin">Administrador</option>
+                                        </select> 
+                                    </div><!--end form-group--> 
+
+                                    <!-- Términos y condiciones -->
+                                    <div class="form-group row mt-3">
+                                        <div class="col-12">
+                                            <div class="form-check form-switch form-switch-success">
+                                                <input class="form-check-input" type="checkbox" id="customSwitchSuccess" required>
+                                                <label class="form-check-label" for="customSwitchSuccess">Estás de acuerdo con los <a href="#" class="text-primary">Términos y condiciones</a></label>
+                                            </div>
+                                        </div><!--end col--> 
+                                    </div><!--end form-group--> 
+
+                                    <!-- Botón de Registro -->
+                                    <div class="form-group mb-0 row">
+                                        <div class="col-12">
+                                            <div class="d-grid mt-3">
+                                                <button class="btn btn-custom" type="submit">Registrar <i class="fas fa-sign-in-alt ms-1"></i></button>
+                                            </div>
+                                        </div><!--end col--> 
+                                    </div> <!--end form-group-->                           
+                                </form><!--end form-->
+
                                     <div class="m-3 text-center text-muted">
                                         <p class="mb-0">Ya tienes cuenta? <a href="auth-login.php" class="text-primary ms-2">Ingresa</a></p>
                                     </div>
