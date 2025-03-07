@@ -1,0 +1,93 @@
+/*==============================================================*/
+/* DBMS name:      MySQL 5.0                                    */
+/* Created on:     7/3/2025 1:09:45                             */
+/*==============================================================*/
+
+
+/*==============================================================*/
+/* Table: EMPRESAS                                              */
+/*==============================================================*/
+create table EMPRESAS
+(
+   EMPID                int not null auto_increment,
+   SALID                int,
+   EMPNOMBRE            char(50),
+   EMPVALORUNITARIO     decimal(10,4),
+   EMPCANTIDADACCIONES  int,
+   EMPTIPOMONEDA        char(10),
+   primary key (EMPID)
+);
+
+/*==============================================================*/
+/* Table: NOTICIAS                                              */
+/*==============================================================*/
+create table NOTICIAS
+(
+   NOTID                int not null auto_increment,
+   SALID                int,
+   NOTDESCRIPCION       longtext,
+   NOTSENTIMIENTO       int,
+   primary key (NOTID)
+);
+
+/*==============================================================*/
+/* Table: RANKING                                               */
+/*==============================================================*/
+create table RANKING
+(
+   RANID                int not null auto_increment,
+   SALID                int,
+   RANIDUSERUNO         int not null,
+   RANIDUSERDOS         int,
+   RANIDUSERTRES        int,
+   RANIDUSERCUATRO      int,
+   RANIDUSERCINCO       int,
+   RANIDUSERSEIS        int,
+   RANIDUSERSIETE       int,
+   RANIDUSEROCHO        int,
+   RANIDUSERNUEVE       int,
+   RANIDUSERDIEZ        int,
+   primary key (RANID)
+);
+
+/*==============================================================*/
+/* Table: SALAS                                                 */
+/*==============================================================*/
+create table SALAS
+(
+   SALID                int not null auto_increment,
+   SALNOMBRE            char(50),
+   SALDESCRIPCION       longtext,
+   SALNUMEROTURNOS      int,
+   SALNUMEROUSUARIOS    int,
+   primary key (SALID)
+);
+
+/*==============================================================*/
+/* Table: USER                                                  */
+/*==============================================================*/
+create table USER
+(
+   USEID                int not null auto_increment,
+   RANID                int,
+   USENOMBRE            char(50),
+   USEAPELLIDO          char(50),
+   USEEMAIL             char(50),
+   USEPASSWORD          longtext,
+   USEROL               longtext,
+   USESALDO             decimal(10,4),
+   USECEDULA            char(10),
+   primary key (USEID)
+);
+
+alter table EMPRESAS add constraint FK_REGISTRA foreign key (SALID)
+      references SALAS (SALID) on delete restrict on update restrict;
+
+alter table NOTICIAS add constraint FK_AFECTA foreign key (SALID)
+      references SALAS (SALID) on delete restrict on update restrict;
+
+alter table RANKING add constraint FK_INGRESAN foreign key (SALID)
+      references SALAS (SALID) on delete restrict on update restrict;
+
+alter table USER add constraint FK_AGRUPAN foreign key (RANID)
+      references RANKING (RANID) on delete restrict on update restrict;
