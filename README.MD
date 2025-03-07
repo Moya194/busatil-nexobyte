@@ -1,3 +1,7 @@
+Objetivo global
+crear multiusuarios , donde el admin punse iniciar y salga un modal con cuenta regresiva
+
+
 Jean - Fullstack
 Login Redirecicone a sinterfaces de usurio y admin
 
