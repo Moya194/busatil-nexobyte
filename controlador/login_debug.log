@@ -108,3 +108,103 @@ Usuario encontrado: Array
 
 Contraseña correcta. Iniciando sesión.
 Redirigiendo a admin
+Acceso al script: 2025-03-07 16:12:24
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Usuario: jean@gmail.com
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrilllo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$kMLoWvTk/ULpfDPoCcaZle0pnPUFiHUpUOnR9Xh2n4iBTd5HBu5hm
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-07 16:14:39
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Usuario: jean@gmail.com
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrilllo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$kMLoWvTk/ULpfDPoCcaZle0pnPUFiHUpUOnR9Xh2n4iBTd5HBu5hm
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-07 16:23:31
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Usuario: jean@gmail.com
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrilllo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$kMLoWvTk/ULpfDPoCcaZle0pnPUFiHUpUOnR9Xh2n4iBTd5HBu5hm
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-07 16:24:29
+POST: Array
+(
+    [username] => jean@gmail.com
+    [password] => 123
+)
+
+Usuario: jean@gmail.com
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrilllo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$kMLoWvTk/ULpfDPoCcaZle0pnPUFiHUpUOnR9Xh2n4iBTd5HBu5hm
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
