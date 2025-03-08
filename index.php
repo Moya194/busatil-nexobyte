@@ -66,7 +66,8 @@ $saldo = $_SESSION['saldo'];
                 <span class="online-icon position-absolute end-0"><i class="mdi mdi-record text-success"></i></span>
             </div>
             <div class="media-body ms-2 user-detail align-self-center">
-                <h5 class="font-14 m-0 fw-bold">Mr. Michael Hill </h5>
+                <h5 class="font-14 m-0 fw-bold"><?php echo $_SESSION['nombre']; ?>
+                </h5>
                 <p class="opacity-50 mb-0">michael.hill@exemple.com</p>
             </div>
         </div>
