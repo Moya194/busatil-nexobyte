@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $confirmpassword = isset($_POST['confirmpassword']) ? $_POST['confirmpassword'] : '';
     $rol             = isset($_POST['rol']) ? $_POST['rol'] : '';
     $saldo           = isset($_POST['saldo']) ? $_POST['saldo'] : '';
+    
     // Validación de contraseñas
     if ($password !== $confirmpassword) {
         echo "Las contraseñas no coinciden.";
@@ -44,6 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Ejecutamos la consulta
         $stmt->execute();
         echo "Datos insertados correctamente.";
+
+        // Redirigir a la página de login
+        header("Location: ../auth-login.php");
+        exit(); // Asegurarse de que el script termine después de la redirección
 
         // Cerrar la conexión
         $stmt = null;
