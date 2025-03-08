@@ -16,3 +16,7 @@ interface resultados , segun los usuario y tabla ranking
 Omar -Fullstack
 reestructurar la base de datos e incluir categorias
 transaccion salas.
+
+
+Proximo equipo
+activar y desactivar salas

@@ -6,7 +6,7 @@ file_put_contents('login_debug.log', 'Acceso al script: ' . date('Y-m-d H:i:s') 
 file_put_contents('login_debug.log', 'POST: ' . print_r($_POST, true) . "\n", FILE_APPEND);
 
 // Incluimos el archivo de conexión
-require_once '../constant/conexionDB.php';
+require '../constant/conexionDB.php';
 
 // Verificamos si hay conexión
 if (!isset($conn)) {
@@ -15,6 +15,7 @@ if (!isset($conn)) {
     header("Location: ../auth-login.php");
     exit();
 }
+
 
 // Verificamos si se ha enviado el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -63,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     header("Location: ../principal.php");
                 } else {
                     file_put_contents('login_debug.log', 'Redirigiendo a usuario regular' . "\n", FILE_APPEND);
-                    header("Location: ../analytics-customers.php");
+                    header("Location: ../index.php");
                 }
                 exit();
             } else {

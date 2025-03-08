@@ -799,89 +799,113 @@
             <div>
                 <h1>Salas Activas</h1>
             </div>
-            <div class="col-lg-4">
 
-                <div class="card team-card">
-                    <div class="card-body">
-                        <div class="float-end">
-                            <div class="dropdown d-inline-block">
-                                <a class="dropdown-toggle" id="dLabel1" data-bs-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="false" aria-expanded="false">
-                                    <i class="las la-ellipsis-v font-24 text-muted"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dLabel1">
-                                    <a class="dropdown-item" href="#">Open Project</a>
-                                    <a class="dropdown-item" href="#">Edit Card</a>
-                                    <a class="dropdown-item" href="#">Delete</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media align-items-center">
-                            <div class="img-group">
-                                <a class="user-avatar me-1" href="#">
-                                    <img src="assets/images/users/user-9.jpg" alt="user"
-                                        class="rounded-circle thumb-md">
-                                    <span class="avatar-badge online"></span>
-                                </a>
-                            </div>
-                            <div class="media-body ms-2 align-self-center">
-                                <h5 class="m-0">Jason Haston</h5>
-                                <p class="text-muted font-12 mb-0">Team Leader</p>
-                            </div>
-                        </div>
-                        <h4 class="m-0 mt-3 font-13 mb-0 fw-bold">Frontend Developer Team</h4>
-                        <p class="text-muted mb-0 fw-semibold">Contrary to popular belief, Lorem Ipsum is not simply</p>
-                        <div class="mt-3 d-flex justify-content-between">
-                            <div class="img-group">
-                                <a class="user-avatar" href="#">
-                                    <img src="assets/images/users/user-8.jpg" alt="user"
-                                        class="thumb-xs rounded-circle">
-                                </a>
-                                <a class="user-avatar ms-n3" href="#">
-                                    <img src="assets/images/users/user-5.jpg" alt="user"
-                                        class="thumb-xs rounded-circle">
-                                </a>
-                                <a class="user-avatar ms-n3" href="#">
-                                    <img src="assets/images/users/user-4.jpg" alt="user"
-                                        class="thumb-xs rounded-circle">
-                                </a>
-                                <a class="user-avatar ms-n3" href="#">
-                                    <img src="assets/images/users/user-6.jpg" alt="user"
-                                        class="thumb-xs rounded-circle">
-                                </a>
-                                <a href="#" class="user-avatar">
-                                    <span
-                                        class="thumb-xs justify-content-center d-flex align-items-center bg-soft-info rounded-circle fw-semibold">+6</span>
-                                </a>
-                            </div>
-                            <div class="align-self-center">
-                                <button type="button" class="btn btn-xs btn-light btn-round">View Details <i
-                                        class="mdi mdi-arrow-right"></i></button>
-                            </div>
-                        </div>
-                        <hr class="hr-dashed my-3">
-                        <div class="media align-items-center">
-                            <img src="assets/images/small/project-3.jpg" alt="" class="rounded-circle thumb-sm">
-                            <div class="media-body ms-3 align-self-center">
-                                <h6 class="m-0 font-15">Transfer Money</h6>
-                                <div class="d-flex justify-content-between">
-                                    <span>
-                                        <a class="" href="#">
-                                            <i class="mdi mdi-format-list-bulleted text-success"></i>
-                                            <span class="text-muted">50/100</span>
+            <?php
+            include 'constant/conexionDB.php';
+            $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Usuario';
+            $emailUsuario  = isset($_SESSION['email']) ? $_SESSION['email'] : 'usuario@example.com';
+
+            // Consultamos las salas disponibles
+            try {
+                $query = "SELECT SALID, SALNOMBRE, SALDESCRIPCION, SALNUMEROTURNOS, SALNUMEROUSUARIOS FROM SALAS";
+                $stmt = $conn->prepare($query);
+                $stmt->execute();
+                $salas = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            } catch (PDOException $e) {
+                echo "Error al obtener las salas: " . $e->getMessage();
+                exit;
+            }
+            ?>
+            <div class="container">
+                <div class="row">
+                    <?php if (count($salas) > 0): ?>
+                        <?php foreach ($salas as $sala): ?>
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card team-card">
+                                    <div class="card-body">
+                                        <!-- Dropdown Menu -->
+                                        <div class="float-end">
+                                            <div class="dropdown d-inline-block">
+                                                <a class="dropdown-toggle" id="dLabel1" data-bs-toggle="dropdown" href="#" role="button"
+                                                aria-haspopup="false" aria-expanded="false">
+                                                    <i class="las la-ellipsis-v font-24 text-muted"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dLabel1">
+                                                    <a class="dropdown-item" href="#">Open Project</a>
+                                                    <a class="dropdown-item" href="#">Edit Card</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Sala Information -->
+                                        <div class="media align-items-center">
+                                            <div class="img-group">
+                                                <a class="user-avatar me-1" href="#">
+                                                    <img src="assets/images/users/user-9.jpg" alt="user" class="rounded-circle thumb-md">
+                                                    <span class="avatar-badge online"></span>
+                                                </a>
+                                            </div>
+                                            <div class="media-body ms-2 align-self-center">
+                                                <h5  class="text-xl font-semibold mb-2"><?php echo htmlspecialchars($sala['SALNOMBRE']); ?></h5>
+                                                <p class="text-muted font-12 mb-0">Team Leader</p>
+                                            </div>
+                                        </div>
+
+                                            <h3></h3>
+                                            <p class="text-gray-700 mb-2"><?php echo htmlspecialchars($sala['SALDESCRIPCION']); ?></p>
+                                            <p class="text-gray-600 mb-2"><strong>Turnos:</strong> <?php echo htmlspecialchars($sala['SALNUMEROTURNOS']); ?></p>
+                                            <p class="text-gray-600 mb-4"><strong>Usuarios:</strong> <?php echo htmlspecialchars($sala['SALNUMEROUSUARIOS']); ?></p>
+                                        <hr class="hr-dashed my-3">
+                                        <!-- Project Details (Optional, can be adjusted to match the salas context) -->
+                                        <a href="sala_espera.php?salaID=<?php echo $sala['SALID']; ?>" >        
+                                        <div class="media align-items-center bg-light text-white p-3">
+                                              <img src="assets/images/small/project-3.jpg" alt="" class="rounded-circle thumb-sm">
+                                                <div class="media-body ms-3 align-self-center">
+                                                    <h6 class="m-0 font-15 text-darck">Ingresar a la Sala</h6>
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>
+                                                            <a href="#">
+                                                                <i class="mdi mdi-format-list-bulleted text-success"></i>
+                                                                <span class="text-muted">50/100</span>
+                                                            </a>
+                                                        </span>
+                                                        <span class="text-muted">55% Complete</span>
+                                                    </div>
+                                                    <div class="progress mt-0" style="height:3px;">
+                                                        <div class="progress-bar bg-pink" role="progressbar" style="width: 55%;"
+                                                            aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
                                         </a>
-                                    </span>
-                                    <span class="text-muted">55% Complete</span>
-                                </div>
-                                <div class="progress mt-0" style="height:3px;">
-                                    <div class="progress-bar bg-pink" role="progressbar" style="width: 55%;"
-                                        aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end card-body-->
-                </div><!--end card-->
-            </div>
+                                    </div><!--end card-body-->
+                                </div><!--end card-->
+                            </div><!--end col-lg-4-->
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p>No hay salas disponibles en este momento.</p>
+                    <?php endif; ?>
+                </div><!--end row-->
+            </div><!--end container-->
+
+
+                <script>
+                    // Toggle del menú desplegable
+                    const menuButton = document.getElementById('menuButton');
+                    const dropdownMenu = document.getElementById('dropdownMenu');
+                    
+                    menuButton.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    dropdownMenu.classList.toggle('hidden');
+                    });
+                    
+                    document.addEventListener('click', () => {
+                    dropdownMenu.classList.add('hidden');
+                    });
+                </script>
+        
 
             <!--Start Rightbar-->
             <!--Start Rightbar/offcanvas-->

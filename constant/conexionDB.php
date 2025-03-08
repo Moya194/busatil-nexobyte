@@ -1,7 +1,7 @@
 <?php
 // Conexión a la base de datos usando PDO
 $host = 'localhost';
-$dbname = 'bursatil-nexobyte';   // Cambia al nombre real de tu BD
+$dbname = 'bursatil_nexobyte';   // Cambia al nombre real de tu BD
 $username = 'root';           // Usuario de tu BD
 $password = '';               // Contraseña de tu BD (si la tienes)
 
