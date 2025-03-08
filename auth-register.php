@@ -91,8 +91,8 @@
                                         </select> 
                                     </div><!--end form-group--> 
                                                                        <!-- Rol (puede ser un select si tienes roles) -->
-                                                                       <div class="form-group mb-2">
-                                    <label class="form-label" for="saldo">Saldo</label>
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="saldo">Saldo</label>
                                         <select class="form-control" id="saldo" name="saldo" required>
                                             <option value="100">100</option>
                                             <option value="300">300</option>
