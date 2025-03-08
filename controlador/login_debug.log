@@ -1143,3 +1143,28 @@ Usuario encontrado: Array
 
 Contraseña correcta. Iniciando sesión.
 Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 23:05:25
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 4
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$5k20i1RVj1vGo8kKF5CTPOnSIwsZ6.pnQn/x5akTPr2WExOJ4ow2O
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
