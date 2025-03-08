@@ -1143,3 +1143,103 @@ Usuario encontrado: Array
 
 Contraseña correcta. Iniciando sesión.
 Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 22:23:06
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$uJ.qqBlCMjS38KKkYJCszOxPQWV.Tv9GMt8zoYP1d32q069MLzVCW
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 22:23:41
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$DJQpnX16R3I/nGKMwKx4uubkpTypO1xDSH1WKRlhhsD6YZc2I4VGi
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 22:25:13
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 4
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$5k20i1RVj1vGo8kKF5CTPOnSIwsZ6.pnQn/x5akTPr2WExOJ4ow2O
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-08 22:46:41
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 4
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$5k20i1RVj1vGo8kKF5CTPOnSIwsZ6.pnQn/x5akTPr2WExOJ4ow2O
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin

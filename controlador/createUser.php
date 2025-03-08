@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password        = isset($_POST['password']) ? $_POST['password'] : '';
     $confirmpassword = isset($_POST['confirmpassword']) ? $_POST['confirmpassword'] : '';
     $rol             = isset($_POST['rol']) ? $_POST['rol'] : '';
-
+    $saldo           = isset($_POST['saldo']) ? $_POST['saldo'] : '';
     // Validación de contraseñas
     if ($password !== $confirmpassword) {
         echo "Las contraseñas no coinciden.";
@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         // Consulta con placeholders de PDO (nombrados o ?)
-        $query = "INSERT INTO USER (USECEDULA, USENOMBRE, USEAPELLIDO, USEEMAIL, USEPASSWORD, USEROL) 
-                  VALUES (:cedula, :nombre, :apellido, :email, :hashedPassword, :rol)";
+        $query = "INSERT INTO USER (USECEDULA, USENOMBRE, USEAPELLIDO, USEEMAIL, USEPASSWORD, USEROL, USESALDO) 
+                  VALUES (:cedula, :nombre, :apellido, :email, :hashedPassword, :rol, :saldo)";
 
         $stmt = $conn->prepare($query);
 
@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':email', $email, PDO::PARAM_STR);
         $stmt->bindParam(':hashedPassword', $hashedPassword, PDO::PARAM_STR);
         $stmt->bindParam(':rol', $rol, PDO::PARAM_STR);
+        $stmt->bindParam(':saldo', $saldo, PDO::PARAM_STR);
 
         // Ejecutamos la consulta
         $stmt->execute();
