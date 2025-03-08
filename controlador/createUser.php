@@ -1,15 +1,14 @@
 <?php
-include '../constant/conexionDB.php';
+include '../constant/conexionDB.php'; // Debe tener $conn como un objeto PDO
 
-// Recuperamos los datos del formulario y los almacenamos en variables
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $cedula = isset($_POST['cedula']) ? trim($_POST['cedula']) : '';
-    $nombre = isset($_POST['nombre']) ? trim($_POST['nombre']) : '';
-    $apellido = isset($_POST['apellido']) ? trim($_POST['apellido']) : '';
-    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-    $password = isset($_POST['password']) ? $_POST['password'] : '';
+    $cedula          = isset($_POST['cedula']) ? trim($_POST['cedula']) : '';
+    $nombre          = isset($_POST['nombre']) ? trim($_POST['nombre']) : '';
+    $apellido        = isset($_POST['apellido']) ? trim($_POST['apellido']) : '';
+    $email           = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $password        = isset($_POST['password']) ? $_POST['password'] : '';
     $confirmpassword = isset($_POST['confirmpassword']) ? $_POST['confirmpassword'] : '';
-    $rol = isset($_POST['rol']) ? $_POST['rol'] : '';
+    $rol             = isset($_POST['rol']) ? $_POST['rol'] : '';
 
     // Validación de contraseñas
     if ($password !== $confirmpassword) {
@@ -23,33 +22,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Encriptar la contraseña antes de almacenarla en la base de datos
+    // Encriptar la contraseña
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    // Preparamos la consulta de inserción
-    $query = "INSERT INTO USER (USECEDULA, USENOMBRE, USEAPELLIDO, USEEMAIL, USEPASSWORD, USEROL) 
-              VALUES (?, ?, ?, ?, ?, ?)";
+    try {
+        // Consulta con placeholders de PDO (nombrados o ?)
+        $query = "INSERT INTO USER (USECEDULA, USENOMBRE, USEAPELLIDO, USEEMAIL, USEPASSWORD, USEROL) 
+                  VALUES (:cedula, :nombre, :apellido, :email, :hashedPassword, :rol)";
 
-    // Preparamos la sentencia
-    $stmt = $conn->prepare($query);
+        $stmt = $conn->prepare($query);
 
-    // Ligamos los parámetros y ejecutamos la consulta
-    $stmt->bindValue(1, $cedula);
-    $stmt->bindValue(2, $nombre);
-    $stmt->bindValue(3, $apellido);
-    $stmt->bindValue(4, $email);
-    $stmt->bindValue(5, $hashedPassword);
-    $stmt->bindValue(6, $rol);
+        // Asignamos los valores a cada placeholder
+        $stmt->bindParam(':cedula', $cedula, PDO::PARAM_STR);
+        $stmt->bindParam(':nombre', $nombre, PDO::PARAM_STR);
+        $stmt->bindParam(':apellido', $apellido, PDO::PARAM_STR);
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+        $stmt->bindParam(':hashedPassword', $hashedPassword, PDO::PARAM_STR);
+        $stmt->bindParam(':rol', $rol, PDO::PARAM_STR);
 
-    // Ejecutamos la consulta
-    if ($stmt->execute()) {
+        // Ejecutamos la consulta
+        $stmt->execute();
         echo "Datos insertados correctamente.";
-    } else {
-        echo "Error al insertar los datos.";
-    }
 
-    // Cerrar la conexión
-    $conn = null;
+        // Cerrar la conexión
+        $stmt = null;
+        $conn = null;
+
+    } catch (PDOException $e) {
+        echo "Error al insertar los datos: " . $e->getMessage();
+    }
 } else {
     echo "No se enviaron los datos del formulario.";
 }

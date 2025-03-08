@@ -208,3 +208,569 @@ Usuario encontrado: Array
 
 Contraseña correcta. Iniciando sesión.
 Redirigiendo a usuario regular
+Acceso al script: 2025-03-07 22:48:10
+POST: Array
+(
+    [username] => ads
+    [password] => 123
+)
+
+Usuario: ads
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-07 22:48:16
+POST: Array
+(
+    [username] => asd
+    [password] => 123
+)
+
+Usuario: asd
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-07 22:50:15
+POST: Array
+(
+    [username] => ads
+    [password] => 123
+)
+
+Usuario: ads
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-07 22:50:39
+POST: Array
+(
+    [username] => ads
+    [password] => 123
+)
+
+Usuario: ads
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-07 23:12:00
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 0
+    [RANID] => 
+    [USENOMBRE] => ads
+    [USEAPELLIDO] => asd
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-07 23:13:30
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 0
+    [RANID] => 
+    [USENOMBRE] => ads
+    [USEAPELLIDO] => asd
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-07 23:16:48
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 0
+    [RANID] => 
+    [USENOMBRE] => ads
+    [USEAPELLIDO] => asd
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-07 23:18:55
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 0
+    [RANID] => 
+    [USENOMBRE] => ads
+    [USEAPELLIDO] => asd
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-07 23:21:26
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+    [remember] => on
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 0
+    [RANID] => 
+    [USENOMBRE] => ads
+    [USEAPELLIDO] => asd
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-07 23:23:15
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 0
+    [RANID] => 
+    [USENOMBRE] => ads
+    [USEAPELLIDO] => asd
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-07 23:40:21
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 0
+    [RANID] => 
+    [USENOMBRE] => ads
+    [USEAPELLIDO] => asd
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-08 00:05:47
+POST: Array
+(
+    [cedula] => 1710156075
+    [password] => 123
+)
+
+Cédula: 1710156075
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => arass
+    [USEAPELLIDO] => asadas
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => $2y$10$dnCugAuOb.4YFukXkW7CLe2RTgy7NkYkNbm8Qi89RLGKjowB/ZQPe
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1710156075
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-08 00:06:18
+POST: Array
+(
+    [cedula] => 1710156075
+    [password] => 123
+)
+
+Cédula: 1710156075
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => arass
+    [USEAPELLIDO] => asadas
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1710156075
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-08 00:06:40
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => andress
+    [USEAPELLIDO] => mo
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 00:39:10
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => andress
+    [USEAPELLIDO] => mo
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 00:39:19
+POST: Array
+(
+    [cedula] => 1710156075
+    [password] => 123
+)
+
+Cédula: 1710156075
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => arass
+    [USEAPELLIDO] => asadas
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1710156075
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-08 04:49:28
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => andress
+    [USEAPELLIDO] => mo
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 04:52:36
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => andress
+    [USEAPELLIDO] => mo
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 06:31:36
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 132
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => andress
+    [USEAPELLIDO] => mo
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-08 06:31:42
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => andress
+    [USEAPELLIDO] => mo
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 06:38:13
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => andress
+    [USEAPELLIDO] => mo
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 17:04:33
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => andress
+    [USEAPELLIDO] => mo
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 17:06:33
+POST: Array
+(
+    [cedula] => 1710156075
+    [password] => 123
+)
+
+Cédula: 1710156075
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => arass
+    [USEAPELLIDO] => asadas
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1710156075
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-08 17:18:05
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => andress
+    [USEAPELLIDO] => mo
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 17:34:03
+POST: Array
+(
+    [cedula] => 1710156075
+    [password] => 123
+)
+
+Cédula: 1710156075
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => arass
+    [USEAPELLIDO] => asadas
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => 123
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1710156075
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin

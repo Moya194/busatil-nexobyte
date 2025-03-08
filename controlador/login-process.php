@@ -1,18 +1,4 @@
 <?php
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $remember = isset($_POST['remember']) ? true : false;
-
-    // Aquí procesarías el inicio de sesión
-    // Ejemplo: validación, autenticación, etc.
-    echo "Usuario: " . htmlspecialchars($username) . "<br>";
-    echo "Contraseña: " . htmlspecialchars($password) . "<br>";
-    echo "Recordar: " . ($remember ? 'Sí' : 'No') . "<br>";
-}
-
-// Iniciamos sesión
 session_start();
 
 // Para depuración - almacena información en un archivo de log
@@ -32,23 +18,23 @@ if (!isset($conn)) {
 
 // Verificamos si se ha enviado el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtenemos los datos del formulario
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    // Ejemplo: validación, autenticación, etc.
-    echo "Usuario: " . htmlspecialchars($username) . "<br>";
+    // Obtenemos los datos del formulario, usando 'cedula' en lugar de 'username'
+    $cedula = isset($_POST['cedula']) ? $_POST['cedula'] : '';
+    $password = isset($_POST['password']) ? $_POST['password'] : '';
+    $remember = isset($_POST['remember']) ? true : false;
+    
+    // Para depuración: mostramos los datos recibidos
+    echo "Cédula: " . htmlspecialchars($cedula) . "<br>";
     echo "Contraseña: " . htmlspecialchars($password) . "<br>";
     echo "Recordar: " . ($remember ? 'Sí' : 'No') . "<br>";
-    
-    // Registramos los valores recibidos para depuración
-    file_put_contents('login_debug.log', 'Usuario: ' . $username . "\n", FILE_APPEND);
+
+    file_put_contents('login_debug.log', 'Cédula: ' . $cedula . "\n", FILE_APPEND);
     file_put_contents('login_debug.log', 'Intentando autenticar...' . "\n", FILE_APPEND);
     
     try {
-        // Preparamos la consulta para buscar al usuario por su email
-        $stmt = $conn->prepare("SELECT * FROM USER WHERE USEEMAIL = :email");
-        $stmt->bindParam(':email', $username);
+        // Preparamos la consulta para buscar al usuario por su cédula
+        $stmt = $conn->prepare("SELECT * FROM USER WHERE USECEDULA = :cedula");
+        $stmt->bindParam(':cedula', $cedula);
         $stmt->execute();
         
         file_put_contents('login_debug.log', 'Consulta ejecutada. Filas: ' . $stmt->rowCount() . "\n", FILE_APPEND);
@@ -58,22 +44,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
             file_put_contents('login_debug.log', 'Usuario encontrado: ' . print_r($user, true) . "\n", FILE_APPEND);
             
-            // Verificamos la contraseña
-            if (password_verify($password, $user['USEPASSWORD'])) {
+            // Comparación de contraseña en texto plano
+            if ($password === $user['USEPASSWORD']) {
                 file_put_contents('login_debug.log', 'Contraseña correcta. Iniciando sesión.' . "\n", FILE_APPEND);
                 
                 // Contraseña correcta, creamos la sesión
                 $_SESSION['logged_in'] = true;
                 $_SESSION['user_id'] = $user['USEID'];
+                $_SESSION['cedula'] = $user['USECEDULA'];
                 $_SESSION['nombre'] = $user['USENOMBRE'];
                 $_SESSION['apellido'] = $user['USEAPELLIDO'];
                 $_SESSION['role'] = $user['USEROL'];
                 $_SESSION['saldo'] = $user['USESALDO'];
                 
-                // Redirigimos según el rol
+                // Redirigimos según el rol del usuario
                 if ($user['USEROL'] == 'admin') {
                     file_put_contents('login_debug.log', 'Redirigiendo a admin' . "\n", FILE_APPEND);
-                    header("Location: ../analytics-reports.php");
+                    header("Location: ../principal.php");
                 } else {
                     file_put_contents('login_debug.log', 'Redirigiendo a usuario regular' . "\n", FILE_APPEND);
                     header("Location: ../analytics-customers.php");
@@ -102,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     file_put_contents('login_debug.log', 'Acceso directo al script sin POST' . "\n", FILE_APPEND);
-    // Si alguien intenta acceder directamente a este archivo
+    // Si alguien intenta acceder directamente a este archivo sin enviar el formulario
     header("Location: ../auth-login.php");
     exit();
 }

@@ -1,23 +1,20 @@
-<?php 
-// Archivo de conexión con manejo de errores (try-catch) usando PDO
-$servername = "localhost"; // Dirección del servidor de la base de datos
-$username = "root"; // Tu usuario de base de datos
-$password = ""; // Tu contraseña de base de datos
-$dbname = "bursatil-nexobyte"; // Nombre de la base de datos
+<?php
+// Conexión a la base de datos usando PDO
+$host = 'localhost';
+$dbname = 'bursatil-nexobyte';   // Cambia al nombre real de tu BD
+$username = 'root';           // Usuario de tu BD
+$password = '';               // Contraseña de tu BD (si la tienes)
 
 try {
-    // Crear una conexión PDO
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    
-    // Establecer el modo de error de PDO a excepción
+    // Construimos el DSN (Data Source Name) para MySQL
+    $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+
+    // Configuramos el modo de errores de PDO a excepción
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-    // Remover o comentar este echo para evitar problemas con las redirecciones
-    // echo "Conexión exitosa a mi base de datos real";
+
 } catch (PDOException $e) {
-    // Si ocurre un error, se captura y se registra pero no se muestra al usuario
-    error_log("Error de conexión a la base de datos: " . $e->getMessage());
-    // En producción es mejor no mostrar el error específico al usuario
-    // echo "Error en el sistema. Por favor contacte al administrador.";
+    // Si falla la conexión, mostramos un mensaje de error y salimos
+    echo 'Error de conexión: ' . $e->getMessage();
+    exit;
 }
 ?>

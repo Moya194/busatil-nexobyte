@@ -3,105 +3,101 @@
 /* Created on:     7/3/2025 4:05:49                             */
 /*==============================================================*/
 
-
 /*==============================================================*/
 /* Table: CATEGORIAS                                            */
 /*==============================================================*/
-create table CATEGORIAS
-(
-   CATID                int not null auto_increment,
-   CATNOMBRE            char(50),
-   primary key (CATID)
+CREATE TABLE CATEGORIAS (
+    CATID INT NOT NULL AUTO_INCREMENT,
+    CATNOMBRE CHAR(50),
+    PRIMARY KEY (CATID)
 );
 
 /*==============================================================*/
 /* Table: EMPRESAS                                              */
 /*==============================================================*/
-create table EMPRESAS
-(
-   EMPID                int not null auto_increment,
-   SALID                int,
-   CATID                int,
-   EMPNOMBRE            char(50),
-   EMPVALORUNITARIO     decimal(10,4),
-   EMPCANTIDADACCIONES  int,
-   EMPTIPOMONEDA        char(10),
-   primary key (EMPID)
+CREATE TABLE EMPRESAS (
+    EMPID INT NOT NULL AUTO_INCREMENT,
+    SALID INT,
+    CATID INT,
+    EMPNOMBRE CHAR(50),
+    EMPVALORUNITARIO DECIMAL(10,4),
+    EMPCANTIDADACCIONES INT,
+    EMPTIPOMONEDA CHAR(10),
+    PRIMARY KEY (EMPID)
 );
 
 /*==============================================================*/
 /* Table: NOTICIAS                                              */
 /*==============================================================*/
-create table NOTICIAS
-(
-   NOTID                int not null auto_increment,
-   SALID                int,
-   NOTDESCRIPCION       longtext,
-   NOTSENTIMIENTO       int,
-   primary key (NOTID)
+CREATE TABLE NOTICIAS (
+    NOTID INT NOT NULL AUTO_INCREMENT,
+    SALID INT,
+    NOTDESCRIPCION LONGTEXT,
+    NOTSENTIMIENTO INT,
+    PRIMARY KEY (NOTID)
 );
 
 /*==============================================================*/
 /* Table: RANKING                                               */
 /*==============================================================*/
-create table RANKING
-(
-   RANID                int not null auto_increment,
-   SALID                int,
-   RANIDUSERUNO         int not null,
-   RANIDUSERDOS         int,
-   RANIDUSERTRES        int,
-   RANIDUSERCUATRO      int,
-   RANIDUSERCINCO       int,
-   RANIDUSERSEIS        int,
-   RANIDUSERSIETE       int,
-   RANIDUSEROCHO        int,
-   RANIDUSERNUEVE       int,
-   RANIDUSERDIEZ        int,
-   primary key (RANID)
+CREATE TABLE RANKING (
+    RANID INT NOT NULL AUTO_INCREMENT,
+    SALID INT,
+    RANIDUSERUNO INT NOT NULL,
+    RANIDUSERDOS INT,
+    RANIDUSERTRES INT,
+    RANIDUSERCUATRO INT,
+    RANIDUSERCINCO INT,
+    RANIDUSERSEIS INT,
+    RANIDUSERSIETE INT,
+    RANIDUSEROCHO INT,
+    RANIDUSERNUEVE INT,
+    RANIDUSERDIEZ INT,
+    PRIMARY KEY (RANID)
 );
 
 /*==============================================================*/
 /* Table: SALAS                                                 */
 /*==============================================================*/
-create table SALAS
-(
-   SALID                int not null auto_increment,
-   SALNOMBRE            char(50),
-   SALDESCRIPCION       longtext,
-   SALNUMEROTURNOS      int,
-   SALNUMEROUSUARIOS    int,
-   primary key (SALID)
+CREATE TABLE SALAS (
+    SALID INT NOT NULL AUTO_INCREMENT,
+    SALNOMBRE CHAR(50),
+    SALDESCRIPCION LONGTEXT,
+    SALNUMEROTURNOS INT,
+    SALNUMEROUSUARIOS INT,
+    PRIMARY KEY (SALID)
 );
 
 /*==============================================================*/
 /* Table: USER                                                  */
 /*==============================================================*/
-create table USER
-(
-   USEID                int not null auto_increment,
-   RANID                int,
-   USENOMBRE            char(50),
-   USEAPELLIDO          char(50),
-   USEEMAIL             char(50),
-   USEPASSWORD          longtext,
-   USEROL               longtext,
-   USESALDO             decimal(10,4),
-   USECEDULA            char(10),
-   primary key (USEID)
+CREATE TABLE USER (
+    USEID INT NOT NULL AUTO_INCREMENT,
+    RANID INT,
+    USENOMBRE CHAR(50),
+    USEAPELLIDO CHAR(50),
+    USEEMAIL CHAR(50),
+    USEPASSWORD LONGTEXT,
+    USEROL LONGTEXT,
+    USESALDO DECIMAL(10,4),
+    USECEDULA CHAR(10),
+    PRIMARY KEY (USEID)
 );
 
-alter table EMPRESAS add constraint FK_PERTENECE foreign key (CATID)
-      references CATEGORIAS (CATID) on delete restrict on update restrict;
+/*==============================================================*/
+/* Foreign Keys                                                 */
+/*==============================================================*/
+ALTER TABLE EMPRESAS ADD CONSTRAINT FK_PERTENECE FOREIGN KEY (CATID)
+      REFERENCES CATEGORIAS (CATID) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-alter table EMPRESAS add constraint FK_REGISTRA foreign key (SALID)
-      references SALAS (SALID) on delete restrict on update restrict;
+ALTER TABLE EMPRESAS ADD CONSTRAINT FK_REGISTRA FOREIGN KEY (SALID)
+      REFERENCES SALAS (SALID) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-alter table NOTICIAS add constraint FK_AFECTA foreign key (SALID)
-      references SALAS (SALID) on delete restrict on update restrict;
+ALTER TABLE NOTICIAS ADD CONSTRAINT FK_AFECTA FOREIGN KEY (SALID)
+      REFERENCES SALAS (SALID) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-alter table RANKING add constraint FK_INGRESAN foreign key (SALID)
-      references SALAS (SALID) on delete restrict on update restrict;
+ALTER TABLE RANKING ADD CONSTRAINT FK_INGRESAN FOREIGN KEY (SALID)
+      REFERENCES SALAS (SALID) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-alter table USER add constraint FK_AGRUPAN foreign key (RANID)
-      references RANKING (RANID) on delete restrict on update restrict;
+ALTER TABLE USER ADD CONSTRAINT FK_AGRUPAN FOREIGN KEY (RANID)
+      REFERENCES RANKING (RANID) ON DELETE RESTRICT ON UPDATE RESTRICT;

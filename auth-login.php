@@ -54,8 +54,8 @@
 
                                     <form class="my-4" action="controlador/login-process.php" method="POST">
                                         <div class="form-group mb-2">
-                                            <label class="form-label" for="username">Usuario</label>
-                                            <input type="text" class="form-control" id="username" name="username" placeholder="Ingrese Usuario" required>
+                                            <label class="form-label" for="cedula">Cédula</label>
+                                            <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Ingrese su cédula" required>
                                         </div><!--end form-group-->
 
                                         <div class="form-group">
@@ -78,9 +78,8 @@
                                         <div class="form-group mb-0 row">
                                             <div class="col-12">
                                                 <div class="d-grid mt-3">
-                                                <button class="btn btn-custom" type="submit">Registrar <i class="fas fa-sign-in-alt ms-1"></i></button>
+                                                    <button class="btn btn-custom" type="submit">Registrar <i class="fas fa-sign-in-alt ms-1"></i></button>
                                                 </div>
-
                                             </div><!--end col-->
                                         </div> <!--end form-group-->
                                     </form><!--end form-->
