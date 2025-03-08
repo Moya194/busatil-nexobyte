@@ -30,7 +30,7 @@
         <div class="left-sidebar">
             <!-- LOGO -->
             <div class="brand">
-                <a href="index.html" class="logo">
+                <a href="index.php" class="logo">
                     <span>
                         <img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
                     </span>
@@ -79,13 +79,13 @@
                             <div class="collapse " id="sidebarAnalytics">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index.html">Dashboard</a>
+                                        <a class="nav-link" href="index.php">Dashboard</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
-                                        <a href="analytics-customers.html" class="nav-link ">Customers</a>
+                                        <a href="analytics-customers.php" class="nav-link ">Customers</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
-                                        <a href="analytics-reports.html" class="nav-link ">Reports</a>
+                                        <a href="analytics-reports.php" class="nav-link ">Reports</a>
                                     </li><!--end nav-item-->
                                 </ul><!--end nav-->
                             </div><!--end sidebarAnalytics-->
