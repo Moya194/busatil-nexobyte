@@ -1143,3 +1143,53 @@ Usuario encontrado: Array
 
 Contraseña correcta. Iniciando sesión.
 Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 21:01:04
+POST: Array
+(
+    [cedula] => 1755584262
+    [password] => 987654321
+)
+
+Cédula: 1755584262
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 14
+    [RANID] => 
+    [USENOMBRE] => omar
+    [USEAPELLIDO] => sani admin
+    [USEEMAIL] => omaralexander_sani@hotmail.com
+    [USEPASSWORD] => $2y$10$CnTZdqUZLsxmT6qTLze7Gu19VnQIvETU7W.J.xHO1vdR22YQNoD2a
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1755584262
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-08 21:05:39
+POST: Array
+(
+    [cedula] => 1755584262
+    [password] => 987654321
+)
+
+Cédula: 1755584262
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 14
+    [RANID] => 
+    [USENOMBRE] => omar
+    [USEAPELLIDO] => sani admin
+    [USEEMAIL] => omaralexander_sani@hotmail.com
+    [USEPASSWORD] => $2y$10$CnTZdqUZLsxmT6qTLze7Gu19VnQIvETU7W.J.xHO1vdR22YQNoD2a
+    [USEROL] => admin
+    [USESALDO] => 
+    [USECEDULA] => 1755584262
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin

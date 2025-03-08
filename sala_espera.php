@@ -51,10 +51,17 @@ try {
       <p class="mb-2"><strong>Descripción:</strong> <?php echo htmlspecialchars($sala['SALDESCRIPCION']); ?></p>
       <p class="mb-2"><strong>Número de Turnos:</strong> <?php echo htmlspecialchars($sala['SALNUMEROTURNOS']); ?></p>
       <p class="mb-2"><strong>Número de Usuarios:</strong> <?php echo htmlspecialchars($sala['SALNUMEROUSUARIOS']); ?></p>
+      
       <div class="mt-6 text-center">
-          <p class="text-green-600 font-bold">¡Esperando el inicio de la sesión!</p>
+          <p class="text-green-600 font-bold">Active la simulacion para los usuarios que ya esten dentro de la sala</p>
       </div>
+      <form action="iniciar_simulacion.php" method="POST">
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">
+        Activar Simulacion
+      </button>
+    </form>
     </div>
   </div>
+
 </body>
 </html>

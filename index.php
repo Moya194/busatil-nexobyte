@@ -7,7 +7,6 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     header("Location: auth-login.php");
     exit();
 }
-
 // Ahora puedes usar los valores almacenados en la sesión
 $user_id = $_SESSION['user_id'];
 $cedula = $_SESSION['cedula'];
@@ -15,8 +14,6 @@ $nombre = $_SESSION['nombre'];
 $apellido = $_SESSION['apellido'];
 $role = $_SESSION['role'];
 $saldo = $_SESSION['saldo'];
-
-
 ?>
 
 

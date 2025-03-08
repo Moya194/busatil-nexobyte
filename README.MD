@@ -16,7 +16,8 @@ interface resultados , segun los usuario y tabla ranking
 Omar -Fullstack
 reestructurar la base de datos e incluir categorias
 transaccion salas.
-
+redirigir despues de ingresar 
+colocar saldo cuando me registre
 
 Proximo equipo
 activar y desactivar salas
