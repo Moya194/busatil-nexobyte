@@ -78,7 +78,7 @@
                                         <div class="form-group mb-0 row">
                                             <div class="col-12">
                                                 <div class="d-grid mt-3">
-                                                    <button class="btn btn-custom" type="submit">Registrar <i class="fas fa-sign-in-alt ms-1"></i></button>
+                                                    <button class="btn btn-custom" type="submit">Ingresar <i class="fas fa-sign-in-alt ms-1"></i></button>
                                                 </div>
                                             </div><!--end col-->
                                         </div> <!--end form-group-->

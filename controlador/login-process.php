@@ -57,6 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['apellido'] = $user['USEAPELLIDO'];
                 $_SESSION['role'] = $user['USEROL'];
                 $_SESSION['saldo'] = $user['USESALDO'];
+                $_SESSION['email'] = $user['USEEMAIL'];
+                $_SESSION['saldo'] = $user['USESALDO'];
                 
                 // Redirigimos según el rol del usuario
                 if ($user['USEROL'] == 'admin') {

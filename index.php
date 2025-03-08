@@ -15,7 +15,7 @@ $nombre = $_SESSION['nombre'];
 $apellido = $_SESSION['apellido'];
 $role = $_SESSION['role'];
 $saldo = $_SESSION['saldo'];
-
+$email = $_SESSION['email'];
 
 ?>
 
@@ -68,7 +68,7 @@ $saldo = $_SESSION['saldo'];
             <div class="media-body ms-2 user-detail align-self-center">
                 <h5 class="font-14 m-0 fw-bold"><?php echo $_SESSION['nombre']; ?>
                 </h5>
-                <p class="opacity-50 mb-0">michael.hill@exemple.com</p>
+                <p class="opacity-50 mb-0"><?php echo $_SESSION['email']; ?></p>
             </div>
         </div>
         <div class="border-end">
@@ -361,8 +361,8 @@ $saldo = $_SESSION['saldo'];
                             <img src="assets/images/users/user-4.jpg" alt="profile-user"
                                 class="rounded-circle me-2 thumb-sm" />
                             <div>
-                                <small class="d-none d-md-block font-11">Admin</small>
-                                <span class="d-none d-md-block fw-semibold font-12">Maria Gibson <i
+                                <small class="d-none d-md-block font-11"><?php echo $_SESSION['role']; ?></small>
+                                <span class="d-none d-md-block fw-semibold font-12"><?php echo $_SESSION['nombre']; ?> <i
                                         class="mdi mdi-chevron-down"></i></span>
                             </div>
                         </div>
@@ -441,7 +441,7 @@ $saldo = $_SESSION['saldo'];
                                                 <img src="assets/images/logos/btc.png"
                                                     class="me-2 thumb-md align-self-center rounded-circle" alt="...">
                                                 <div class="media-body align-self-center">
-                                                    <h3 class="m-0 font-24 fw-bold">3.18424000 BTC</h3>
+                                                    <h3 class="m-0 font-24 fw-bold"><?php echo $_SESSION['saldo']; ?></h3>
                                                     <p class="text-muted font-12 mb-0">$ 33277.36605044718</p>
                                                 </div><!--end media body-->
                                             </div><!--end media-->
