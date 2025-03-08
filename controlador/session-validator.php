@@ -30,7 +30,7 @@ function es_usuario() {
  */
 function requiere_login() {
     if (!esta_logueado()) {
-        header("Location: auth-login.php");
+        header("Location: ../auth-login.php");
         exit();
     }
 }

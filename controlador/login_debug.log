@@ -1011,3 +1011,135 @@ Usuario encontrado: Array
 
 Contraseña correcta. Iniciando sesión.
 Redirigiendo a usuario regular
+Acceso al script: 2025-03-08 20:21:46
+POST: Array
+(
+    [cedula] => 1755584263
+    [password] => 123456789
+)
+
+Cédula: 1755584263
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 13
+    [RANID] => 
+    [USENOMBRE] => omar
+    [USEAPELLIDO] => sani
+    [USEEMAIL] => omarxdj4@gmail.com
+    [USEPASSWORD] => $2y$10$WfBZwgu4Mq8KuPYCiTjx3OE4us7L5vpKKSzZbDPYZ4EyNjR0lAMJC
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1755584263
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-08 20:22:49
+POST: Array
+(
+    [cedula] => admin
+    [password] => omaralexander1478963211
+)
+
+Cédula: admin
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-08 20:31:07
+POST: Array
+(
+    [cedula] => 1755584263
+    [password] => 123456789
+)
+
+Cédula: 1755584263
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 13
+    [RANID] => 
+    [USENOMBRE] => omar
+    [USEAPELLIDO] => sani
+    [USEEMAIL] => omarxdj4@gmail.com
+    [USEPASSWORD] => $2y$10$WfBZwgu4Mq8KuPYCiTjx3OE4us7L5vpKKSzZbDPYZ4EyNjR0lAMJC
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1755584263
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-08 20:32:06
+POST: Array
+(
+    [cedula] => 1755584263
+    [password] => 123456789
+)
+
+Cédula: 1755584263
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 13
+    [RANID] => 
+    [USENOMBRE] => omar
+    [USEAPELLIDO] => sani
+    [USEEMAIL] => omarxdj4@gmail.com
+    [USEPASSWORD] => $2y$10$WfBZwgu4Mq8KuPYCiTjx3OE4us7L5vpKKSzZbDPYZ4EyNjR0lAMJC
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1755584263
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-08 20:32:17
+POST: Array
+(
+    [cedula] => 1755584263
+    [password] => 123456789
+)
+
+Cédula: 1755584263
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 13
+    [RANID] => 
+    [USENOMBRE] => omar
+    [USEAPELLIDO] => sani
+    [USEEMAIL] => omarxdj4@gmail.com
+    [USEPASSWORD] => $2y$10$WfBZwgu4Mq8KuPYCiTjx3OE4us7L5vpKKSzZbDPYZ4EyNjR0lAMJC
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1755584263
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-08 20:35:07
+POST: Array
+(
+    [cedula] => 1755584263
+    [password] => 123456789
+)
+
+Cédula: 1755584263
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 13
+    [RANID] => 
+    [USENOMBRE] => omar
+    [USEAPELLIDO] => sani
+    [USEEMAIL] => omarxdj4@gmail.com
+    [USEPASSWORD] => $2y$10$WfBZwgu4Mq8KuPYCiTjx3OE4us7L5vpKKSzZbDPYZ4EyNjR0lAMJC
+    [USEROL] => usuario
+    [USESALDO] => 
+    [USECEDULA] => 1755584263
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular

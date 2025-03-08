@@ -45,8 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
             file_put_contents('login_debug.log', 'Usuario encontrado: ' . print_r($user, true) . "\n", FILE_APPEND);
             
-            // Comparación de contraseña en texto plano
-            if ($password === $user['USEPASSWORD']) {
+            // Comparación de la contraseña utilizando password_verify
+            if (password_verify($password, $user['USEPASSWORD'])) {
                 file_put_contents('login_debug.log', 'Contraseña correcta. Iniciando sesión.' . "\n", FILE_APPEND);
                 
                 // Contraseña correcta, creamos la sesión
@@ -88,10 +88,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ../auth-login.php");
         exit();
     }
-} else {
-    file_put_contents('login_debug.log', 'Acceso directo al script sin POST' . "\n", FILE_APPEND);
-    // Si alguien intenta acceder directamente a este archivo sin enviar el formulario
-    header("Location: ../auth-login.php");
-    exit();
 }
+
 ?>
