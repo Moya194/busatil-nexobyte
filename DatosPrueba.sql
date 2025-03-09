@@ -49,17 +49,6 @@ INSERT INTO NOTICIAS (SALID, NOTDESCRIPCION, NOTSENTIMIENTO) VALUES
 (16, 'Una empresa dedicada a la producción de repostería ha realizado una importante inversión en tecnología de última generación, mejorando la eficiencia de sus procesos.', 1),
 (17, 'La empresa ha establecido alianzas estratégicas con productores locales de ingredientes frescos, asegurando la calidad y la sostenibilidad de sus productos, y promoviendo la economía local.', 1);
 
-INSERT INTO RANKING (SALID, RANIDUSERUNO, RANIDUSERDOS, RANIDUSERTRES, RANIDUSERCUATRO, RANIDUSERCINCO, RANIDUSERSEIS, RANIDUSERSIETE, RANIDUSEROCHO, RANIDUSERNUEVE, RANIDUSERDIEZ) VALUES
-(1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-(2, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1),
-(3, 1, 3, 5, 7, 9, 2, 4, 6, 8, 10),
-(4, 10, 8, 6, 4, 2, 1, 3, 7, 9, 5),
-(5, 7, 4, 2, 1, 10, 6, 3, 5, 8, 9),
-(6, 9, 5, 1, 7, 2, 3, 8, 4, 6, 10),
-(7, 8, 7, 6, 5, 4, 3, 10, 9, 2, 1),
-(8, 6, 3, 8, 2, 10, 1, 5, 7, 4, 9),
-(9, 4, 2, 1, 6, 10, 8, 7, 5, 3, 9),
-(10, 3, 5, 4, 7, 6, 2, 1, 9, 8, 10);
 
 
 INSERT INTO SALAS (SALNOMBRE, SALDESCRIPCION, SALNUMEROTURNOS, SALNUMEROUSUARIOS) VALUES
@@ -76,8 +65,8 @@ INSERT INTO SALAS (SALNOMBRE, SALDESCRIPCION, SALNUMEROTURNOS, SALNUMEROUSUARIOS
 
 
 INSERT INTO USER (RANID, USENOMBRE, USEAPELLIDO, USEEMAIL, USEPASSWORD, USEROL, USESALDO, USECEDULA) VALUES
-(1, 'Carlos', 'Martínez', 'carlosm@empresa.com', '123456', 'Administrador', 1000.00, 'V12345678'),
-(2, 'Ana', 'González', 'ana@empresa.com', 'abcdef', 'Usuario', 500.00, 'V23456789'),
+(1, 'Nos quedamos en APA', 'Usuario Prueva Normal', 'int@gmail.com', '$2y$10$jN6HivSwHhJokD2QTQ2Ab.pU4.Osgq28fUefUeHIdb0b5wU5jXKnC', 'usuario', 1000.00, '123456789'),
+(2, 'ADMINISTRADOR', 'González', 'ADMINISTRADOR@empresa.com', '$2y$10$RyhgOHoIbggzsNFEiAwaIOjoxebtLggvQNB3YJhal8ojRjSaeYxZS', 'admin', 500.00, '987654321'),
 (3, 'Luis', 'Pérez', 'luis@empresa.com', 'ghijkl', 'Usuario', 350.00, 'V34567890'),
 (4, 'Marta', 'López', 'marta@empresa.com', 'mnopqr', 'Usuario', 1200.00, 'V45678901'),
 (5, 'Jorge', 'Hernández', 'jorge@empresa.com', 'stuvwx', 'Administrador', 1500.00, 'V56789012'),
