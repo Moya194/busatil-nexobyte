@@ -90,6 +90,16 @@
                                             <option value="admin">Administrador</option>
                                         </select> 
                                     </div><!--end form-group--> 
+                                                                       <!-- Rol (puede ser un select si tienes roles) -->
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="saldo">Saldo</label>
+                                        <select class="form-control" id="saldo" name="saldo" required>
+                                            <option value="100">100</option>
+                                            <option value="300">300</option>
+                                            <option value="500">500</option>
+                                            <option value="700">700</option>
+                                        </select> 
+                                    </div><!--end form-group--> 
 
                                     <!-- Términos y condiciones -->
                                     <div class="form-group row mt-3">
