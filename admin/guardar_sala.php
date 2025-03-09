@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     try {
-        // 3. Preparar la consulta con placeholders de PDO
+        // 3. Preparar la consulta con placeholders de PDO para la inserción en la tabla SALAS
         $query = "INSERT INTO SALAS (SALNOMBRE, SALDESCRIPCION, SALNUMEROTURNOS, SALNUMEROUSUARIOS)
                   VALUES (:nombre, :descripcion, :numTurnos, :numUsuarios)";
         
@@ -34,15 +34,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // 7. Obtener el ID de la sala recién creada
         $salaID = $conn->lastInsertId();
 
-        // 8. Redirigir a la sala de espera pasando el ID de la sala
+        // 8. Realizar el insert en la tabla RANKING con valores vacíos
+        $rankingQuery = "INSERT INTO RANKING (SALID, RANIDUSERUNO, RANIDUSERDOS, RANIDUSERTRES, RANIDUSERCUATRO, 
+                                           RANIDUSERCINCO, RANIDUSERSEIS, RANIDUSERSIETE, RANIDUSEROCHO, RANIDUSERNUEVE, 
+                                           RANIDUSERDIEZ, RANESTADO)
+                         VALUES (:salaID, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pendiente')";
+        
+        // 9. Preparar la sentencia para el ranking
+        $rankingStmt = $conn->prepare($rankingQuery);
+
+        // 10. Asignar el valor del ID de la sala
+        $rankingStmt->bindParam(':salaID', $salaID, PDO::PARAM_INT);
+
+        // 11. Ejecutar el insert en la tabla RANKING
+        $rankingStmt->execute();
+
+        // 12. Redirigir a la sala de espera pasando el ID de la sala
         header("Location: ../sala_espera.php?salaID=" . $salaID);
         exit();
     } catch (PDOException $e) {
-        // 9. Manejo de errores
-        echo "Error al crear la sala: " . $e->getMessage();
+        // 13. Manejo de errores
+        echo "Error al crear la sala o al insertar en el ranking: " . $e->getMessage();
     }
 
-    // 10. Liberar recursos
+    // 14. Liberar recursos
     $stmt = null;
     $conn = null;
 } else {

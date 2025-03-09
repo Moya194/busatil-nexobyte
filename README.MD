@@ -21,3 +21,4 @@ colocar saldo cuando me registre
 
 Proximo equipo
 activar y desactivar salas
+recuperar contraseña
