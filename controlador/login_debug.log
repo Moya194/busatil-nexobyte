@@ -1143,3 +1143,961 @@ Usuario encontrado: Array
 
 Contraseña correcta. Iniciando sesión.
 Redirigiendo a usuario regular
+Acceso al script: 2025-03-09 08:26:40
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 02:22:52
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 21
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmial.com
+    [USEPASSWORD] => $2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 02:23:01
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 22
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$kdFF50MVDU5HXvxCIc5ar.RzqIj4XQJi48WmE263WM3b4WiqJm7PW
+    [USEROL] => admin
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 02:55:39
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 21
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmial.com
+    [USEPASSWORD] => $2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 07:22:47
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 21
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmial.com
+    [USEPASSWORD] => $2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 08:47:27
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 22
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$kdFF50MVDU5HXvxCIc5ar.RzqIj4XQJi48WmE263WM3b4WiqJm7PW
+    [USEROL] => admin
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 08:47:48
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 21
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmial.com
+    [USEPASSWORD] => $2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 17:42:19
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 21
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmial.com
+    [USEPASSWORD] => $2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 17:44:52
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 22
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$kdFF50MVDU5HXvxCIc5ar.RzqIj4XQJi48WmE263WM3b4WiqJm7PW
+    [USEROL] => admin
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 17:58:48
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 21
+    [RANID] => 1
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmial.com
+    [USEPASSWORD] => $2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 17:59:02
+POST: Array
+(
+    [cedula] => 1752573922
+    [password] => 123
+)
+
+Cédula: 1752573922
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 17:59:54
+POST: Array
+(
+    [cedula] => 1752573922
+    [password] => 123
+)
+
+Cédula: 1752573922
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 23
+    [RANID] => 
+    [USENOMBRE] => patito
+    [USEAPELLIDO] => peque
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$Uj6K3NSmXxaGGFWVAuhWRuZn9pnMQRMQKJXQnlcJY/5yf/jiYULBa
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573922
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 18:02:46
+POST: Array
+(
+    [cedula] => 1752573923
+    [password] => 123
+)
+
+Cédula: 1752573923
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 24
+    [RANID] => 
+    [USENOMBRE] => cursed
+    [USEAPELLIDO] => chain
+    [USEEMAIL] => saw@gmail.com
+    [USEPASSWORD] => $2y$10$7YLOrJ4DBa.lgCpfq/20muj38Iu49jfY6CXOOUMfTfOfr642iQZv6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573923
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 19:23:57
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 19:26:31
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$sTRQdZhFjxkLEseLHgFHFOc.ypKcjx5tKZ7wDlfTcHWVvG.HlzTJ6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 19:26:59
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 3
+    [RANID] => 
+    [USENOMBRE] => Kuro
+    [USEAPELLIDO] => tt
+    [USEEMAIL] => pipi@gmail.com
+    [USEPASSWORD] => $2y$10$M4lA1yROsZznOMYymvZcIeq7Ymrmi4F7jJN9QY7mpTWZ7Kx7iqBiC
+    [USEROL] => admin
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 19:28:33
+POST: Array
+(
+    [cedula] => 1752573923
+    [password] => 123
+)
+
+Cédula: 1752573923
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 5
+    [RANID] => 
+    [USENOMBRE] => AMC
+    [USEAPELLIDO] => ...
+    [USEEMAIL] => bachi@gmail.com
+    [USEPASSWORD] => $2y$10$gKTslklVkLyS34kmV51M5uXmZLaSGUFgU.68XPJH1izit973Dpofy
+    [USEROL] => usuario
+    [USESALDO] => 99999.0000
+    [USECEDULA] => 1752573923
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 19:33:13
+POST: Array
+(
+    [cedula] => 175237920
+    [password] => 123
+)
+
+Cédula: 175237920
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 19:33:21
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 3
+    [RANID] => 
+    [USENOMBRE] => Kuro
+    [USEAPELLIDO] => tt
+    [USEEMAIL] => pipi@gmail.com
+    [USEPASSWORD] => $2y$10$M4lA1yROsZznOMYymvZcIeq7Ymrmi4F7jJN9QY7mpTWZ7Kx7iqBiC
+    [USEROL] => admin
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 19:34:01
+POST: Array
+(
+    [cedula] => 1752573923
+    [password] => 123
+)
+
+Cédula: 1752573923
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 5
+    [RANID] => 
+    [USENOMBRE] => AMC
+    [USEAPELLIDO] => ...
+    [USEEMAIL] => bachi@gmail.com
+    [USEPASSWORD] => $2y$10$gKTslklVkLyS34kmV51M5uXmZLaSGUFgU.68XPJH1izit973Dpofy
+    [USEROL] => usuario
+    [USESALDO] => 99999.0000
+    [USECEDULA] => 1752573923
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 19:34:14
+POST: Array
+(
+    [cedula] => 1752573922
+    [password] => 123
+)
+
+Cédula: 1752573922
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 4
+    [RANID] => 
+    [USENOMBRE] => patito
+    [USEAPELLIDO] => tich
+    [USEEMAIL] => rata@gmail.com
+    [USEPASSWORD] => $2y$10$C47JWy1NyISavuVy6I0hIeEif0vdvCVlNrhIsFQKsWIGGlnb2SAgG
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573922
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 19:46:59
+POST: Array
+(
+    [cedula] => 1752573922
+    [password] => 123
+)
+
+Cédula: 1752573922
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 4
+    [RANID] => 
+    [USENOMBRE] => Patito
+    [USEAPELLIDO] => patito
+    [USEEMAIL] => patito@gmail.com
+    [USEPASSWORD] => $2y$10$Eu6EMJxQb1b2It2CT0cCHuEfdlEpuYa6udaFstVQT6sut79888UR.
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573922
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 19:47:12
+POST: Array
+(
+    [cedula] => 1752573923
+    [password] => 123
+)
+
+Cédula: 1752573923
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 5
+    [RANID] => 
+    [USENOMBRE] => KURO
+    [USEAPELLIDO] => kuro
+    [USEEMAIL] => kuro@gmail.com
+    [USEPASSWORD] => $2y$10$5BdkShHbSgYsdCOpOokpre6548utZZpAIv3OMsT9/I4NlysxJJ3LC
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573923
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 19:47:44
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => JEAN
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$uaSV8OkII4UckttFvr3GT.fOnKMc6Guz4CvpMWchaRjIeHVoMM3US
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 19:48:46
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 19:48:53
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 19:49:21
+POST: Array
+(
+    [cedula] => 1752579320
+    [password] => 123
+)
+
+Cédula: 1752579320
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 3
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$BRIbG.bm2dKrbFcqTmDdLOJ7xYo5NiBpXOMR32122bpOgQ.VO89YW
+    [USEROL] => admin
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752579320
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 19:49:36
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 19:49:45
+POST: Array
+(
+    [cedula] => 1752579320
+    [password] => 123
+)
+
+Cédula: 1752579320
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 3
+    [RANID] => 
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$BRIbG.bm2dKrbFcqTmDdLOJ7xYo5NiBpXOMR32122bpOgQ.VO89YW
+    [USEROL] => admin
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752579320
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 19:55:07
+POST: Array
+(
+    [cedula] => 1234567890
+    [password] => contraseña123
+)
+
+Cédula: 1234567890
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 1
+    [USENOMBRE] => Juan
+    [USEAPELLIDO] => Pérez
+    [USEEMAIL] => juan@correo.com
+    [USEPASSWORD] => contraseña123
+    [USEROL] => jugador
+    [USESALDO] => 5000.0000
+    [USECEDULA] => 1234567890
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-10 19:55:21
+POST: Array
+(
+    [cedula] => 1234567890
+    [password] => contraseña123
+)
+
+Cédula: 1234567890
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 1
+    [USENOMBRE] => Juan
+    [USEAPELLIDO] => Pérez
+    [USEEMAIL] => juan@correo.com
+    [USEPASSWORD] => contraseña123
+    [USEROL] => jugador
+    [USESALDO] => 5000.0000
+    [USECEDULA] => 1234567890
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-10 20:12:55
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => JEAN
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$uaSV8OkII4UckttFvr3GT.fOnKMc6Guz4CvpMWchaRjIeHVoMM3US
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:14:24
+POST: Array
+(
+    [cedula] => 1752573922
+    [password] => 123
+)
+
+Cédula: 1752573922
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 4
+    [RANID] => 2
+    [USENOMBRE] => Patito
+    [USEAPELLIDO] => patito
+    [USEEMAIL] => patito@gmail.com
+    [USEPASSWORD] => $2y$10$Eu6EMJxQb1b2It2CT0cCHuEfdlEpuYa6udaFstVQT6sut79888UR.
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573922
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:14:51
+POST: Array
+(
+    [cedula] => 1752573922
+    [password] => 123
+)
+
+Cédula: 1752573922
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 23
+    [RANID] => 11
+    [USENOMBRE] => patito
+    [USEAPELLIDO] => peque
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$Uj6K3NSmXxaGGFWVAuhWRuZn9pnMQRMQKJXQnlcJY/5yf/jiYULBa
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573922
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:15:22
+POST: Array
+(
+    [cedula] => 1752573923
+    [password] => 123
+)
+
+Cédula: 1752573923
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 24
+    [RANID] => 11
+    [USENOMBRE] => cursed
+    [USEAPELLIDO] => chain
+    [USEEMAIL] => saw@gmail.com
+    [USEPASSWORD] => $2y$10$7YLOrJ4DBa.lgCpfq/20muj38Iu49jfY6CXOOUMfTfOfr642iQZv6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573923
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:15:58
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 21
+    [RANID] => 1
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmial.com
+    [USEPASSWORD] => $2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:16:33
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 21
+    [RANID] => 12
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmial.com
+    [USEPASSWORD] => $2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:23:56
+POST: Array
+(
+    [cedula] => 1752579320
+    [password] => 123
+)
+
+Cédula: 1752579320
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 20:24:10
+POST: Array
+(
+    [cedula] => 1752579320
+    [password] => 123
+)
+
+Cédula: 1752579320
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 20:24:35
+POST: Array
+(
+    [cedula] => 1752573920
+    [password] => 123
+)
+
+Cédula: 1752573920
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 22
+    [RANID] => 11
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$kdFF50MVDU5HXvxCIc5ar.RzqIj4XQJi48WmE263WM3b4WiqJm7PW
+    [USEROL] => admin
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573920
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 20:24:53
+POST: Array
+(
+    [cedula] => 1752573921
+    [password] => 123
+)
+
+Cédula: 1752573921
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 21
+    [RANID] => 12
+    [USENOMBRE] => jean
+    [USEAPELLIDO] => carrillo
+    [USEEMAIL] => jean@gmial.com
+    [USEPASSWORD] => $2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573921
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:25:04
+POST: Array
+(
+    [cedula] => 1752579322
+    [password] => 123
+)
+
+Cédula: 1752579322
+Intentando autenticar...
+Consulta ejecutada. Filas: 0
+Usuario no encontrado
+Acceso al script: 2025-03-10 20:25:11
+POST: Array
+(
+    [cedula] => 1752573922
+    [password] => 123
+)
+
+Cédula: 1752573922
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 23
+    [RANID] => 12
+    [USENOMBRE] => patito
+    [USEAPELLIDO] => peque
+    [USEEMAIL] => jean@gmail.com
+    [USEPASSWORD] => $2y$10$Uj6K3NSmXxaGGFWVAuhWRuZn9pnMQRMQKJXQnlcJY/5yf/jiYULBa
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573922
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:25:29
+POST: Array
+(
+    [cedula] => 1752573923
+    [password] => 123
+)
+
+Cédula: 1752573923
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 24
+    [RANID] => 12
+    [USENOMBRE] => cursed
+    [USEAPELLIDO] => chain
+    [USEEMAIL] => saw@gmail.com
+    [USEPASSWORD] => $2y$10$7YLOrJ4DBa.lgCpfq/20muj38Iu49jfY6CXOOUMfTfOfr642iQZv6
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 1752573923
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
