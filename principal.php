@@ -17,9 +17,22 @@
 </head>
 <body class="bg-gray-100">
     <div class="flex h-screen">
+        
         <!-- Sidebar -->
         <aside class="w-64 bg-gray-800 text-white p-4 flex flex-col justify-between">
             <div>
+            <div class="brand">
+            <a href="index.php" class="logo">
+                <span>
+                <img src="assets/images/valores.jpg" alt="logo-large" class="logo-lg logo-light">
+
+                </span>
+                <!-- <span>
+                    <img src="assets/images/valores.jpg" alt="logo-large" class="logo-lg logo-light">
+                    <img src="assets/images/valores.jpg" alt="logo-large" class="logo-lg logo-dark">
+                </span> -->
+            </a>
+        </div>
                 <h2 class="text-lg font-bold mb-6">Panel de Administración</h2>
                 <ul>
                     <li class="mb-4"><button onclick="showCard('Sala')" class="w-full text-left hover:text-green-400">➕ Crear Sala</button></li>
@@ -32,6 +45,7 @@
                 <a href="controlador/logout.php" class="block text-center bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">🚪 Cerrar Sesión</a>
             </div>
         </aside>
+        
         
         <!-- Contenido principal -->
         <main class="flex-1 p-8">
@@ -185,7 +199,7 @@
                                         <div class="media align-items-center">
                                             <div class="img-group">
                                                 <a class="user-avatar me-1" href="#">
-                                                    <img src="assets/images/users/user-9.jpg" alt="user" class="rounded-circle thumb-md">
+                                                    <img src="assets/images/users/user.png" alt="user" class="rounded-circle thumb-md">
                                                     <span class="avatar-badge online"></span>
                                                 </a>
                                             </div>

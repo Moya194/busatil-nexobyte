@@ -285,7 +285,7 @@ $_SESSION['salaID'] = $salaID;
   <div class="container mx-auto py-8">
     <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
       <!-- Header -->
-      <div class="bg-blue-600 text-white p-6">
+      <div class="bg-black text-white p-6">
         <h1 class="text-3xl font-bold">Sala de Espera</h1>
         <p class="text-lg">Simulador de Bolsa de Valores</p>
       </div>
@@ -308,7 +308,7 @@ $_SESSION['salaID'] = $salaID;
             <ul class="bg-gray-50 rounded-lg p-4">
               <?php if ($ranIDUserUno > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">1</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">1</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserUno]) ? htmlspecialchars($userNames[$ranIDUserUno]) : 'Usuario '.$ranIDUserUno; ?></span>
                   <?php if ($ranIDUserUno == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                   <?php if ($user_id == $ranIDUserUno && $tipo_usuario == 1): ?><span class="ml-2 px-2 py-1 bg-yellow-500 text-white text-xs rounded">HOST</span><?php endif; ?>
@@ -317,7 +317,7 @@ $_SESSION['salaID'] = $salaID;
               
               <?php if ($ranIDUserDos > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">2</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">2</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserDos]) ? htmlspecialchars($userNames[$ranIDUserDos]) : 'Usuario '.$ranIDUserDos; ?></span>
                   <?php if ($ranIDUserDos == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                 </li>
@@ -325,7 +325,7 @@ $_SESSION['salaID'] = $salaID;
               
               <?php if ($ranIDUserTres > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">3</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">3</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserTres]) ? htmlspecialchars($userNames[$ranIDUserTres]) : 'Usuario '.$ranIDUserTres; ?></span>
                   <?php if ($ranIDUserTres == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                 </li>
@@ -333,7 +333,7 @@ $_SESSION['salaID'] = $salaID;
               
               <?php if ($ranIDUserCuatro > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">4</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">4</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserCuatro]) ? htmlspecialchars($userNames[$ranIDUserCuatro]) : 'Usuario '.$ranIDUserCuatro; ?></span>
                   <?php if ($ranIDUserCuatro == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                 </li>
@@ -341,7 +341,7 @@ $_SESSION['salaID'] = $salaID;
               
               <?php if ($ranIDUserCinco > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">5</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">5</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserCinco]) ? htmlspecialchars($userNames[$ranIDUserCinco]) : 'Usuario '.$ranIDUserCinco; ?></span>
                   <?php if ($ranIDUserCinco == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                 </li>
@@ -349,7 +349,7 @@ $_SESSION['salaID'] = $salaID;
               
               <?php if ($ranIDUserSeis > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">6</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">6</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserSeis]) ? htmlspecialchars($userNames[$ranIDUserSeis]) : 'Usuario '.$ranIDUserSeis; ?></span>
                   <?php if ($ranIDUserSeis == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                 </li>
@@ -357,7 +357,7 @@ $_SESSION['salaID'] = $salaID;
               
               <?php if ($ranIDUserSiete > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">7</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">7</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserSiete]) ? htmlspecialchars($userNames[$ranIDUserSiete]) : 'Usuario '.$ranIDUserSiete; ?></span>
                   <?php if ($ranIDUserSiete == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                 </li>
@@ -365,7 +365,7 @@ $_SESSION['salaID'] = $salaID;
               
               <?php if ($ranIDUserOcho > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">8</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">8</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserOcho]) ? htmlspecialchars($userNames[$ranIDUserOcho]) : 'Usuario '.$ranIDUserOcho; ?></span>
                   <?php if ($ranIDUserOcho == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                 </li>
@@ -373,7 +373,7 @@ $_SESSION['salaID'] = $salaID;
               
               <?php if ($ranIDUserNueve > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">9</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">9</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserNueve]) ? htmlspecialchars($userNames[$ranIDUserNueve]) : 'Usuario '.$ranIDUserNueve; ?></span>
                   <?php if ($ranIDUserNueve == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                 </li>
@@ -381,7 +381,7 @@ $_SESSION['salaID'] = $salaID;
               
               <?php if ($ranIDUserDiez > 0): ?>
                 <li class="p-2 border-b flex items-center">
-                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">10</div>
+                  <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3">10</div>
                   <span class="font-medium"><?php echo isset($userNames[$ranIDUserDiez]) ? htmlspecialchars($userNames[$ranIDUserDiez]) : 'Usuario '.$ranIDUserDiez; ?></span>
                   <?php if ($ranIDUserDiez == $user_id): ?><span class="ml-2 text-green-600">(Tú)</span><?php endif; ?>
                 </li>
@@ -399,7 +399,7 @@ $_SESSION['salaID'] = $salaID;
               <p class="text-xl font-semibold text-green-600">¡La simulación está activa!</p>
               <p class="text-gray-600">Serás redirigido al simulador de bolsa automáticamente.</p>
             </div>
-            <a href="salacompraventa.php?salaID=<?php echo $salaID; ?>" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+            <a href="salacompraventa.php?salaID=<?php echo $salaID; ?>" class="bg-black hover:bg-red-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
               Ingresar al Simulador
             </a>
           <?php elseif ($user_id == $ranIDUserUno && $tipo_usuario == 1 && $currentPlayers >= $sala['SALNUMEROUSUARIOS']): ?>
@@ -419,7 +419,7 @@ $_SESSION['salaID'] = $salaID;
               <p class="text-gray-600">Actualmente hay <?php echo $currentPlayers; ?> de <?php echo $sala['SALNUMEROUSUARIOS']; ?> jugadores requeridos.</p>
               <p class="mt-2 text-sm text-gray-500">La página se actualizará automáticamente.</p>
             </div>
-            <a href="salacompraventa.php?salaID=<?php echo $salaID; ?>" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+            <a href="salacompraventa.php?salaID=<?php echo $salaID; ?>" class="mt-4 bg-black hover:bg-red-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
               Ir Directamente al Simulador
             </a>
           <?php endif; ?>
@@ -431,15 +431,15 @@ $_SESSION['salaID'] = $salaID;
   <!-- Countdown Modal -->
   <div id="countdownModal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white rounded-lg shadow-xl p-8 max-w-md w-full text-center transform transition-all">
-      <h2 class="text-2xl font-bold text-blue-600 mb-4">¡La simulación está por comenzar!</h2>
+      <h2 class="text-2xl font-bold text-black mb-4">¡La simulación está por comenzar!</h2>
       <p class="text-gray-700 mb-6">Serás redirigido en...</p>
       <div class="flex justify-center">
-        <div id="countdown" class="text-6xl font-bold text-blue-600 mb-6">5</div>
+        <div id="countdown" class="text-6xl font-bold text-black mb-6">5</div>
       </div>
       <div class="pulse-animation mb-4">
         <p class="text-gray-700">Preparando la simulación...</p>
       </div>
-      <a href="salacompraventa.php?salaID=<?php echo $salaID; ?>" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+      <a href="salacompraventa.php?salaID=<?php echo $salaID; ?>" class="inline-block bg-black hover:bg-red-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
         Ingresar Ahora
       </a>
     </div>

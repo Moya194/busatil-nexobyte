@@ -2101,3 +2101,177 @@ Usuario encontrado: Array
 
 Contraseña correcta. Iniciando sesión.
 Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:31:40
+POST: Array
+(
+    [cedula] => 1710156075
+    [password] => 123
+)
+
+Cédula: 1710156075
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 
+    [USENOMBRE] => asdsd
+    [USEAPELLIDO] => dasda
+    [USEEMAIL] => andresmoya194@hotmail.com
+    [USEPASSWORD] => $2y$10$lybsRhk0zKIRfgQn/tyVOuWnvcjZE6DMHJbAmGH3m5vUFyE5pG0za
+    [USEROL] => admin
+    [USESALDO] => 700.0000
+    [USECEDULA] => 1710156075
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 20:32:41
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 132
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => ANDRES
+    [USEAPELLIDO] => MOYA
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => $2y$10$dMy5Z/uD..wlrMNO8HmAUuwGfIfSd7y4ZUPbXB4r73NCYysfjhQ0i
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 2300422025
+)
+
+Contraseña incorrecta
+Acceso al script: 2025-03-10 20:32:46
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 
+    [USENOMBRE] => ANDRES
+    [USEAPELLIDO] => MOYA
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => $2y$10$dMy5Z/uD..wlrMNO8HmAUuwGfIfSd7y4ZUPbXB4r73NCYysfjhQ0i
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:34:34
+POST: Array
+(
+    [cedula] => 1716444128
+    [password] => 123
+)
+
+Cédula: 1716444128
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 3
+    [RANID] => 
+    [USENOMBRE] => dante
+    [USEAPELLIDO] => endo
+    [USEEMAIL] => andres.moya@intsuperor.edu.ec
+    [USEPASSWORD] => $2y$10$oqn3atBZfg/wvmuddpUHEO394nYKLwvoizqy9o3v/PHEwReLyj/IS
+    [USEROL] => usuario
+    [USESALDO] => 500.0000
+    [USECEDULA] => 1716444128
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:40:09
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 12
+    [USENOMBRE] => ANDRES
+    [USEAPELLIDO] => MOYA
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => $2y$10$dMy5Z/uD..wlrMNO8HmAUuwGfIfSd7y4ZUPbXB4r73NCYysfjhQ0i
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular
+Acceso al script: 2025-03-10 20:58:58
+POST: Array
+(
+    [cedula] => 1710156075
+    [password] => 123
+)
+
+Cédula: 1710156075
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 2
+    [RANID] => 12
+    [USENOMBRE] => asdsd
+    [USEAPELLIDO] => dasda
+    [USEEMAIL] => andresmoya194@hotmail.com
+    [USEPASSWORD] => $2y$10$lybsRhk0zKIRfgQn/tyVOuWnvcjZE6DMHJbAmGH3m5vUFyE5pG0za
+    [USEROL] => admin
+    [USESALDO] => 700.0000
+    [USECEDULA] => 1710156075
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a admin
+Acceso al script: 2025-03-10 21:24:35
+POST: Array
+(
+    [cedula] => 2300422025
+    [password] => 123
+)
+
+Cédula: 2300422025
+Intentando autenticar...
+Consulta ejecutada. Filas: 1
+Usuario encontrado: Array
+(
+    [USEID] => 1
+    [RANID] => 12
+    [USENOMBRE] => ANDRES
+    [USEAPELLIDO] => MOYA
+    [USEEMAIL] => moyaa297@gmail.com
+    [USEPASSWORD] => $2y$10$dMy5Z/uD..wlrMNO8HmAUuwGfIfSd7y4ZUPbXB4r73NCYysfjhQ0i
+    [USEROL] => usuario
+    [USESALDO] => 100.0000
+    [USECEDULA] => 2300422025
+)
+
+Contraseña correcta. Iniciando sesión.
+Redirigiendo a usuario regular

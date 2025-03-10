@@ -51,17 +51,20 @@ $email = $_SESSION['email'];
         <div class="brand">
             <a href="index.php" class="logo">
                 <span>
-                    <img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                    <img src="assets/images/logo-principal.png" alt="logo-small" class="logo-sm">
+                <i class="fas fa-arrow-right mx-3 text-white"></i> <!-- Flecha -->
+                <img src="assets/images/valores.jpg" alt="logo-large" class="logo-lg logo-light">
+
                 </span>
-                <span>
-                    <img src="assets/images/logo.png" alt="logo-large" class="logo-lg logo-light">
-                    <img src="assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
-                </span>
+                <!-- <span>
+                    <img src="assets/images/valores.jpg" alt="logo-large" class="logo-lg logo-light">
+                    <img src="assets/images/valores.jpg" alt="logo-large" class="logo-lg logo-dark">
+                </span> -->
             </a>
         </div>
         <div class="sidebar-user-pro media border-end">
             <div class="position-relative mx-auto">
-                <img src="assets/images/users/user-4.jpg" alt="user" class="rounded-circle thumb-md">
+                <img src="assets/images/users/user.png" alt="user" class="rounded-circle thumb-md">
                 <span class="online-icon position-absolute end-0"><i class="mdi mdi-record text-success"></i></span>
             </div>
             <div class="media-body ms-2 user-detail align-self-center">
@@ -70,7 +73,7 @@ $email = $_SESSION['email'];
                 <p class="opacity-50 mb-0"><?php echo $_SESSION['email']; ?></p>
             </div>
         </div>
-        <div class="border-end">
+        <!-- <div class="border-end">
             <ul class="nav nav-tabs menu-tab nav-justified" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" data-bs-toggle="tab" href="#Main" role="tab"
@@ -81,67 +84,14 @@ $email = $_SESSION['email'];
                         aria-selected="false">E<span>xtra</span></a>
                 </li>
             </ul>
-        </div>
+        </div> -->
         <!-- Tab panes -->
 
         <!--end logo-->
         <div class="menu-content h-100" data-simplebar>
             <div class="menu-body navbar-vertical">
                 <div class="collapse navbar-collapse tab-content" id="sidebarCollapse">
-                    <!-- Navigation -->
-                    <ul class="navbar-nav tab-pane active" id="Main" role="tabpanel">
-                        <li class="menu-label mt-0 text-primary font-12 fw-semibold">M<span>ain</span><br><span
-                                class="font-10 text-secondary fw-normal">Unique Dashboard</span></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sidebarAnalytics" data-bs-toggle="collapse" role="button"
-                                aria-expanded="false" aria-controls="sidebarAnalytics">
-                                <i class="ti ti-stack menu-icon"></i>
-                                <span>Analytics</span>
-                            </a>
-                            <div class="collapse " id="sidebarAnalytics">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.php">Dashboard</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a href="analytics-customers.php" class="nav-link ">Customers</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a href="analytics-reports.php" class="nav-link ">Reports</a>
-                                    </li><!--end nav-item-->
-                                </ul><!--end nav-->
-                            </div><!--end sidebarAnalytics-->
-                        </li><!--end nav-item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sidebarAuthentication" data-bs-toggle="collapse" role="button"
-                                aria-expanded="false" aria-controls="sidebarAuthentication">
-                                <i class="ti ti-shield-lock menu-icon"></i>
-                                <span>Authentication</span>
-                            </a>
-                            <div class="collapse " id="sidebarAuthentication">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="auth-login.php">Log in</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="auth-register.php">Register</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="auth-recover-pw.php">Re-Password</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="auth-lock-screen.php">Lock Screen</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="auth-404.php">Error 404</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="auth-500.php">Error 500</a>
-                                    </li><!--end nav-item-->
-                                </ul><!--end nav-->
-                            </div><!--end sidebarAuthentication-->
-                        </li><!--end nav-item-->
-                    </ul>
+                    
                     
                 </div><!--end sidebarCollapse-->
             </div>
@@ -190,7 +140,7 @@ $email = $_SESSION['email'];
                                 <small class="float-end text-muted ps-2">2 min ago</small>
                                 <div class="media">
                                     <div class="avatar-md bg-soft-primary">
-                                        <img src="assets/images/users/user-1.jpg" alt=""
+                                        <img src="assets/images/users/user.png" alt=""
                                             class="thumb-sm rounded-circle">
                                     </div>
                                     <div class="media-body align-self-center ms-2 text-truncate">
@@ -204,7 +154,7 @@ $email = $_SESSION['email'];
                                 <small class="float-end text-muted ps-2">10 min ago</small>
                                 <div class="media">
                                     <div class="avatar-md bg-soft-primary">
-                                        <img src="assets/images/users/user-4.jpg" alt=""
+                                        <img src="assets/images/users/user.png" alt=""
                                             class="thumb-sm rounded-circle">
                                     </div>
                                     <div class="media-body align-self-center ms-2 text-truncate">
@@ -219,7 +169,7 @@ $email = $_SESSION['email'];
                                 <small class="float-end text-muted ps-2">40 min ago</small>
                                 <div class="media">
                                     <div class="avatar-md bg-soft-primary">
-                                        <img src="assets/images/users/user-2.jpg" alt=""
+                                        <img src="assets/images/users/user.png" alt=""
                                             class="thumb-sm rounded-circle">
                                     </div>
                                     <div class="media-body align-self-center ms-2 text-truncate">
@@ -233,7 +183,7 @@ $email = $_SESSION['email'];
                                 <small class="float-end text-muted ps-2">1 hr ago</small>
                                 <div class="media">
                                     <div class="avatar-md bg-soft-primary">
-                                        <img src="assets/images/users/user-5.jpg" alt=""
+                                        <img src="assets/images/users/user.png" alt=""
                                             class="thumb-sm rounded-circle">
                                     </div>
                                     <div class="media-body align-self-center ms-2 text-truncate">
@@ -248,7 +198,7 @@ $email = $_SESSION['email'];
                                 <small class="float-end text-muted ps-2">2 hrs ago</small>
                                 <div class="media">
                                     <div class="avatar-md bg-soft-primary">
-                                        <img src="assets/images/users/user-3.jpg" alt=""
+                                        <img src="assets/images/users/user.png" alt=""
                                             class="thumb-sm rounded-circle">
                                     </div>
                                     <div class="media-body align-self-center ms-2 text-truncate">
@@ -357,7 +307,7 @@ $email = $_SESSION['email'];
                     <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
                         aria-haspopup="false" aria-expanded="false">
                         <div class="d-flex align-items-center">
-                            <img src="assets/images/users/user-4.jpg" alt="profile-user"
+                            <img src="assets/images/users/user.png" alt="profile-user"
                                 class="rounded-circle me-2 thumb-sm" />
                             <div>
                                 <small class="d-none d-md-block font-11"><?php echo $_SESSION['role']; ?></small>
@@ -864,7 +814,7 @@ $email = $_SESSION['email'];
                                         <div class="media align-items-center">
                                             <div class="img-group">
                                                 <a class="user-avatar me-1" href="#">
-                                                    <img src="assets/images/users/user-9.jpg" alt="user" class="rounded-circle thumb-md">
+                                                    <img src="assets/images/users/user.png" alt="user" class="rounded-circle thumb-md">
                                                     <span class="avatar-badge online"></span>
                                                 </a>
                                             </div>
