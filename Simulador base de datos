@@ -1,0 +1,366 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 12-04-2025 a las 03:01:56
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `bursatil_nexobyte`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `categorias`
+--
+
+CREATE TABLE `categorias` (
+  `CATID` int(11) NOT NULL,
+  `CATNOMBRE` char(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `categorias`
+--
+
+INSERT INTO `categorias` (`CATID`, `CATNOMBRE`) VALUES
+(1, 'Acciones Bancarias/Financieras'),
+(2, 'Acciones Tecnológicas'),
+(3, 'Acciones de Consumo Discrecional'),
+(4, 'Acciones de Energía'),
+(5, 'Acciones de Salud (Sector Salud)');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `empresas`
+--
+
+CREATE TABLE `empresas` (
+  `EMPID` int(11) NOT NULL,
+  `SALID` int(11) DEFAULT NULL,
+  `CATID` int(11) DEFAULT NULL,
+  `EMPNOMBRE` char(50) DEFAULT NULL,
+  `EMPVALORUNITARIO` decimal(10,4) DEFAULT NULL,
+  `EMPCANTIDADACCIONES` int(11) DEFAULT NULL,
+  `EMPTIPOMONEDA` char(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `empresas`
+--
+
+INSERT INTO `empresas` (`EMPID`, `SALID`, `CATID`, `EMPNOMBRE`, `EMPVALORUNITARIO`, `EMPCANTIDADACCIONES`, `EMPTIPOMONEDA`) VALUES
+(39, 1, 1, 'JPMorgan Chase', '120.5000', 1000000, 'USD'),
+(40, 1, 1, 'Bank of America', '25.7500', 2000000, 'USD'),
+(41, 2, 1, 'Goldman Sachs', '250.1000', 1500000, 'USD'),
+(42, 2, 2, 'Apple', '130.0000', 5000000, 'USD'),
+(43, 3, 2, 'Microsoft', '210.4500', 3000000, 'USD'),
+(44, 3, 2, 'Alphabet (Google)', '2850.7500', 1200000, 'USD'),
+(45, 4, 2, 'Amazon', '3400.5000', 2500000, 'USD'),
+(46, 4, 3, 'Nike', '170.0000', 1500000, 'USD'),
+(47, 5, 3, 'McDonalds', '230.2500', 1800000, 'USD'),
+(48, 5, 3, 'Tesla', '780.0000', 1000000, 'USD'),
+(49, 6, 4, 'ExxonMobil', '65.5000', 4000000, 'USD'),
+(50, 6, 4, 'Chevron', '112.0000', 3500000, 'USD'),
+(51, 7, 4, 'Shell', '58.5000', 3000000, 'USD'),
+(52, 7, 5, 'Johnson & Johnson', '160.5000', 1200000, 'USD'),
+(53, 8, 5, 'Pfizer', '49.7500', 2500000, 'USD'),
+(54, 8, 5, 'Merck', '70.0000', 2300000, 'USD'),
+(55, 9, 5, 'UnitedHealth', '500.0000', 1000000, 'USD'),
+(56, 10, 2, 'Meta (Facebook)', '360.5000', 1500000, 'USD'),
+(57, 11, 2, 'Nvidia', '620.0000', 800000, 'USD');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `noticias`
+--
+
+CREATE TABLE `noticias` (
+  `NOTID` int(11) NOT NULL,
+  `SALID` int(11) DEFAULT NULL,
+  `NOTDESCRIPCION` longtext DEFAULT NULL,
+  `NOTSENTIMIENTO` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `noticias`
+--
+
+INSERT INTO `noticias` (`NOTID`, `SALID`, `NOTDESCRIPCION`, `NOTSENTIMIENTO`) VALUES
+(21, 1, 'Autoridades financieras han implementado nuevas regulaciones para garantizar la estabilidad del sistema financiero y proteger los intereses de los clientes.', 1),
+(22, 1, 'Más personas han accedido a servicios financieros, facilitando el manejo de sus recursos.', 1),
+(23, 2, 'La implementación de nuevas soluciones digitales ha mejorado la eficiencia en transacciones y servicios financieros.', 1),
+(24, 2, 'Se descubrió un caso de malversación de fondos que ha generado indignación en la opinión pública.', 0),
+(25, 3, 'La falta de transparencia en las prácticas financieras ha provocado un deterioro en la confianza de los clientes.', 0),
+(26, 3, 'Se anunció un incremento en las tasas de interés, lo que afectará a los prestatarios y la actividad económica en general.', 0),
+(27, 4, 'Agricultores locales han implementado nuevas técnicas de cultivo que han aumentado la productividad y la calidad de las flores, atrayendo la atención de mercados internacionales.', 1),
+(28, 5, 'Una granja de cultivo de flores ha obtenido una certificación internacional de sostenibilidad, destacando su compromiso con prácticas agrícolas respetuosas con el medio ambiente y socialmente responsables.', 1),
+(29, 6, 'Las exportaciones de flores han alcanzado niveles récord este año, impulsadas por la demanda creciente en mercados internacionales y la calidad superior de los productos cultivados localmente.', 1),
+(30, 7, 'Se ha descubierto que una granja de cultivo de flores está contaminando los cursos de agua cercanos con productos químicos utilizados en la agricultura, generando preocupación entre los residentes locales y las autoridades ambientales.', 0),
+(31, 8, 'Las ventas de flores han disminuido drásticamente debido a la pandemia y las restricciones de viaje, lo que ha llevado a una crisis financiera en varias granjas y a la pérdida de empleos en la industria.', 0),
+(32, 9, 'Varias granjas de cultivo de flores enfrentan una escasez de mano de obra debido a restricciones migratorias y dificultades para contratar trabajadores locales, lo que ha afectado la producción y la calidad de los productos.', 0),
+(33, 10, 'Muchas industrias de fabricación de alimentos están invirtiendo en tecnología y procesos de automatización para mejorar la eficiencia y la calidad de sus productos.', 1),
+(34, 11, 'El aumento en las exportaciones de sus productos, lo que impulsa el crecimiento económico y aumenta la demanda de empleo en el sector. Esto puede ser resultado de una mayor demanda de alimentos procesados en mercados internacionales o de acuerdos comerciales favorables.', 1),
+(35, 12, 'En respuesta a la creciente demanda de alimentos más saludables por parte de los consumidores, muchas industrias están innovando en la creación de productos que sean nutritivos y satisfactorios.', 1),
+(36, 13, 'Los escándalos relacionados con la seguridad alimentaria, como la contaminación, pueden tener un impacto negativo en la reputación de las industrias de fabricación de alimentos.', 0),
+(37, 14, 'El aumento de los costos de las materias primas, como los granos, la carne y el aceite, puede afectar negativamente la rentabilidad de las industrias de fabricación de alimentos.', 0),
+(38, 15, 'Las industrias de fabricación a menudo están sujetas a regulaciones y políticas gubernamentales que pueden cambiar con el tiempo.', 0),
+(39, 16, 'Una empresa dedicada a la producción de repostería ha realizado una importante inversión en tecnología de última generación, mejorando la eficiencia de sus procesos.', 1),
+(40, 17, 'La empresa ha establecido alianzas estratégicas con productores locales de ingredientes frescos, asegurando la calidad y la sostenibilidad de sus productos, y promoviendo la economía local.', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ranking`
+--
+
+CREATE TABLE `ranking` (
+  `RANID` int(11) NOT NULL,
+  `SALID` int(11) DEFAULT NULL,
+  `RANIDUSERUNO` int(11) NOT NULL,
+  `RANIDUSERDOS` int(11) DEFAULT NULL,
+  `RANIDUSERTRES` int(11) DEFAULT NULL,
+  `RANIDUSERCUATRO` int(11) DEFAULT NULL,
+  `RANIDUSERCINCO` int(11) DEFAULT NULL,
+  `RANIDUSERSEIS` int(11) DEFAULT NULL,
+  `RANIDUSERSIETE` int(11) DEFAULT NULL,
+  `RANIDUSEROCHO` int(11) DEFAULT NULL,
+  `RANIDUSERNUEVE` int(11) DEFAULT NULL,
+  `RANIDUSERDIEZ` int(11) DEFAULT NULL,
+  `RANESTADO` char(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `ranking`
+--
+
+INSERT INTO `ranking` (`RANID`, `SALID`, `RANIDUSERUNO`, `RANIDUSERDOS`, `RANIDUSERTRES`, `RANIDUSERCUATRO`, `RANIDUSERCINCO`, `RANIDUSERSEIS`, `RANIDUSERSIETE`, `RANIDUSEROCHO`, `RANIDUSERNUEVE`, `RANIDUSERDIEZ`, `RANESTADO`) VALUES
+(1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, NULL),
+(2, 2, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, NULL),
+(3, 3, 1, 3, 5, 7, 9, 2, 4, 6, 8, 10, NULL),
+(4, 4, 10, 8, 6, 4, 2, 1, 3, 7, 9, 5, NULL),
+(5, 5, 7, 4, 2, 1, 10, 6, 3, 5, 8, 9, NULL),
+(6, 6, 9, 5, 1, 7, 2, 3, 8, 4, 6, 10, NULL),
+(7, 7, 8, 7, 6, 5, 4, 3, 10, 9, 2, 1, NULL),
+(8, 8, 6, 3, 8, 2, 10, 1, 5, 7, 4, 9, NULL),
+(9, 9, 4, 2, 1, 6, 10, 8, 7, 5, 3, 9, NULL),
+(10, 10, 3, 5, 4, 7, 6, 2, 1, 9, 8, 10, NULL),
+(11, 22, 22, 23, 24, 0, 0, 0, 0, 0, 0, 0, 'Pendiente'),
+(12, 23, 3, 23, 24, 21, 0, 0, 0, 0, 0, 0, 'Pendiente'),
+(13, 24, 21, 24, 23, 0, 0, 0, 0, 0, 0, 0, 'Pendiente');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `salas`
+--
+
+CREATE TABLE `salas` (
+  `SALID` int(11) NOT NULL,
+  `SALNOMBRE` char(50) DEFAULT NULL,
+  `SALDESCRIPCION` longtext DEFAULT NULL,
+  `SALNUMEROTURNOS` int(11) DEFAULT NULL,
+  `SALNUMEROUSUARIOS` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `salas`
+--
+
+INSERT INTO `salas` (`SALID`, `SALNOMBRE`, `SALDESCRIPCION`, `SALNUMEROTURNOS`, `SALNUMEROUSUARIOS`) VALUES
+(1, 'Sala 1', 'Sala dedicada a empresas financieras y tecnología.', 10, 150),
+(2, 'Sala 2', 'Sala dedicada a empresas del sector energético y medioambiental.', 8, 120),
+(3, 'Sala 3', 'Sala dedicada a empresas de consumo masivo y salud.', 15, 200),
+(4, 'Sala 4', 'Sala dedicada a empresas tecnológicas y startups.', 20, 250),
+(5, 'Sala 5', 'Sala destinada a grandes corporaciones de alimentos y bebidas.', 18, 180),
+(6, 'Sala 6', 'Sala dedicada a instituciones educativas y seminarios.', 5, 60),
+(7, 'Sala 7', 'Sala especializada en industrias del sector financiero.', 12, 130),
+(8, 'Sala 8', 'Sala que alberga actividades para empresas tecnológicas y digitales.', 8, 100),
+(9, 'Sala 9', 'Sala para la discusión de políticas y regulaciones gubernamentales.', 3, 40),
+(10, 'Sala 10', 'Sala para el desarrollo y asesoramiento en energía renovable.', 10, 110),
+(11, 'Sala 11', 'Sala adicional para nuevos sectores empresariales.', 12, 140),
+(12, 'Sala 1', 'Sala dedicada a empresas financieras y tecnología.', 10, 150),
+(13, 'Sala 2', 'Sala dedicada a empresas del sector energético y medioambiental.', 8, 120),
+(14, 'Sala 3', 'Sala dedicada a empresas de consumo masivo y salud.', 15, 200),
+(15, 'Sala 4', 'Sala dedicada a empresas tecnológicas y startups.', 20, 250),
+(16, 'Sala 5', 'Sala destinada a grandes corporaciones de alimentos y bebidas.', 18, 180),
+(17, 'Sala 6', 'Sala dedicada a instituciones educativas y seminarios.', 5, 60),
+(18, 'Sala 7', 'Sala especializada en industrias del sector financiero.', 12, 130),
+(19, 'Sala 8', 'Sala que alberga actividades para empresas tecnológicas y digitales.', 8, 100),
+(20, 'Sala 9', 'Sala para la discusión de políticas y regulaciones gubernamentales.', 3, 40),
+(21, 'Sala 10', 'Sala para el desarrollo y asesoramiento en energía renovable.', 10, 110),
+(22, 'la santa', 'desgraciada', 20, 10),
+(23, 'rabbit', 'bachi', 8, 29),
+(24, 'lock', 'egoist', 20, 10);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `user`
+--
+
+CREATE TABLE `user` (
+  `USEID` int(11) NOT NULL,
+  `RANID` int(11) DEFAULT NULL,
+  `USENOMBRE` char(50) DEFAULT NULL,
+  `USEAPELLIDO` char(50) DEFAULT NULL,
+  `USEEMAIL` char(50) DEFAULT NULL,
+  `USEPASSWORD` longtext DEFAULT NULL,
+  `USEROL` longtext DEFAULT NULL,
+  `USESALDO` decimal(10,4) DEFAULT NULL,
+  `USECEDULA` char(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `user`
+--
+
+INSERT INTO `user` (`USEID`, `RANID`, `USENOMBRE`, `USEAPELLIDO`, `USEEMAIL`, `USEPASSWORD`, `USEROL`, `USESALDO`, `USECEDULA`) VALUES
+(11, 1, 'Nos quedamos en APA', 'Usuario Prueva Normal', 'int@gmail.com', '$2y$10$jN6HivSwHhJokD2QTQ2Ab.pU4.Osgq28fUefUeHIdb0b5wU5jXKnC', 'usuario', '1000.0000', '123456789'),
+(12, 2, 'ADMINISTRADOR', 'González', 'ADMINISTRADOR@empresa.com', '$2y$10$RyhgOHoIbggzsNFEiAwaIOjoxebtLggvQNB3YJhal8ojRjSaeYxZS', 'admin', '500.0000', '987654321'),
+(13, 3, 'Luis', 'Pérez', 'luis@empresa.com', 'ghijkl', 'Usuario', '350.0000', 'V34567890'),
+(14, 4, 'Marta', 'López', 'marta@empresa.com', 'mnopqr', 'Usuario', '1200.0000', 'V45678901'),
+(15, 5, 'Jorge', 'Hernández', 'jorge@empresa.com', 'stuvwx', 'Administrador', '1500.0000', 'V56789012'),
+(16, 6, 'Pedro', 'Ramírez', 'pedro@empresa.com', 'yzabcd', 'Usuario', '800.0000', 'V67890123'),
+(17, 7, 'Raquel', 'Sánchez', 'raquel@empresa.com', 'wxyz12', 'Usuario', '450.0000', 'V78901234'),
+(18, 8, 'Iván', 'Díaz', 'ivan@empresa.com', '34abcd', 'Administrador', '2000.0000', 'V89012345'),
+(19, 9, 'Luis', 'Gutiérrez', 'luisg@empresa.com', '567efg', 'Usuario', '700.0000', 'V90123456'),
+(20, 10, 'Sandra', 'Vega', 'sandra@empresa.com', '89hijk', 'Usuario', '100.0000', 'V01234567'),
+(21, 13, 'jean', 'carrillo', 'jean@gmial.com', '$2y$10$3L4bTA1zGKyNRTcwbM2CXeQCjMLcktxVBIbREja8JAUv88m.8cto6', 'usuario', '100.0000', '1752573921'),
+(22, 11, 'jean', 'carrillo', 'jean@gmail.com', '$2y$10$kdFF50MVDU5HXvxCIc5ar.RzqIj4XQJi48WmE263WM3b4WiqJm7PW', 'admin', '100.0000', '1752573920'),
+(23, 13, 'patito', 'peque', 'jean@gmail.com', '$2y$10$Uj6K3NSmXxaGGFWVAuhWRuZn9pnMQRMQKJXQnlcJY/5yf/jiYULBa', 'usuario', '100.0000', '1752573922'),
+(24, 13, 'cursed', 'chain', 'saw@gmail.com', '$2y$10$7YLOrJ4DBa.lgCpfq/20muj38Iu49jfY6CXOOUMfTfOfr642iQZv6', 'usuario', '100.0000', '1752573923');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `categorias`
+--
+ALTER TABLE `categorias`
+  ADD PRIMARY KEY (`CATID`);
+
+--
+-- Indices de la tabla `empresas`
+--
+ALTER TABLE `empresas`
+  ADD PRIMARY KEY (`EMPID`),
+  ADD KEY `FK_PERTENECE` (`CATID`),
+  ADD KEY `FK_REGISTRA` (`SALID`);
+
+--
+-- Indices de la tabla `noticias`
+--
+ALTER TABLE `noticias`
+  ADD PRIMARY KEY (`NOTID`),
+  ADD KEY `FK_AFECTA` (`SALID`);
+
+--
+-- Indices de la tabla `ranking`
+--
+ALTER TABLE `ranking`
+  ADD PRIMARY KEY (`RANID`),
+  ADD KEY `FK_INGRESAN` (`SALID`);
+
+--
+-- Indices de la tabla `salas`
+--
+ALTER TABLE `salas`
+  ADD PRIMARY KEY (`SALID`);
+
+--
+-- Indices de la tabla `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`USEID`),
+  ADD KEY `FK_AGRUPAN` (`RANID`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `categorias`
+--
+ALTER TABLE `categorias`
+  MODIFY `CATID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT de la tabla `empresas`
+--
+ALTER TABLE `empresas`
+  MODIFY `EMPID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+
+--
+-- AUTO_INCREMENT de la tabla `noticias`
+--
+ALTER TABLE `noticias`
+  MODIFY `NOTID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+--
+-- AUTO_INCREMENT de la tabla `ranking`
+--
+ALTER TABLE `ranking`
+  MODIFY `RANID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT de la tabla `salas`
+--
+ALTER TABLE `salas`
+  MODIFY `SALID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- AUTO_INCREMENT de la tabla `user`
+--
+ALTER TABLE `user`
+  MODIFY `USEID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `empresas`
+--
+ALTER TABLE `empresas`
+  ADD CONSTRAINT `FK_PERTENECE` FOREIGN KEY (`CATID`) REFERENCES `categorias` (`CATID`),
+  ADD CONSTRAINT `FK_REGISTRA` FOREIGN KEY (`SALID`) REFERENCES `salas` (`SALID`);
+
+--
+-- Filtros para la tabla `noticias`
+--
+ALTER TABLE `noticias`
+  ADD CONSTRAINT `FK_AFECTA` FOREIGN KEY (`SALID`) REFERENCES `salas` (`SALID`);
+
+--
+-- Filtros para la tabla `ranking`
+--
+ALTER TABLE `ranking`
+  ADD CONSTRAINT `FK_INGRESAN` FOREIGN KEY (`SALID`) REFERENCES `salas` (`SALID`);
+
+--
+-- Filtros para la tabla `user`
+--
+ALTER TABLE `user`
+  ADD CONSTRAINT `FK_AGRUPAN` FOREIGN KEY (`RANID`) REFERENCES `ranking` (`RANID`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
